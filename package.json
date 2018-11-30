@@ -1,0 +1,78 @@
+{
+  "name": "ngx-sentry",
+  "description": "",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pascal Iske",
+    "email": "info@pascal-iske.de",
+    "url": "https://pascal-iske.de"
+  },
+  "repository": {
+    "url": "https://github.com/pascaliske/ngx-sentry.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/pascaliske/ngx-sentry/issues"
+  },
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve ngx-sentry-demo",
+    "build": "ng build",
+    "postbuild": "cp README.md dist/ngx-sentry/README.md && cp LICENSE.md dist/ngx-sentry/LICENSE.md",
+    "lint": "ng lint",
+    "check": "snyk test && snyk monitor",
+    "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "precommit": "lint-staged",
+    "link": "yarn run build && cd dist/ngx-sentry && yarn link",
+    "unlink": "cd dist/ngx-sentry && yarn unlink"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "typescript"
+    ]
+  },
+  "lint-staged": {
+    "{src,projects}/**/*.ts": [
+      "yarn run lint",
+      "yarn run format",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@angular/animations": "~7.1.1",
+    "@angular/common": "~7.1.1",
+    "@angular/compiler": "~7.1.1",
+    "@angular/core": "~7.1.1",
+    "@angular/forms": "~7.1.1",
+    "@angular/platform-browser": "~7.1.1",
+    "@angular/platform-browser-dynamic": "~7.1.1",
+    "@angular/router": "~7.1.1",
+    "@sentry/browser": "^4.4.1",
+    "core-js": "^2.5.7",
+    "rxjs": "~6.3.3",
+    "tslib": "^1.9.3",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.11.0",
+    "@angular-devkit/build-ng-packagr": "~0.11.0",
+    "@angular/cli": "~7.1.0",
+    "@angular/compiler-cli": "~7.1.1",
+    "@angular/language-service": "~7.1.1",
+    "@types/node": "~10.12.11",
+    "codelyzer": "~4.5.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "ng-packagr": "^4.4.0",
+    "prettier": "^1.15.3",
+    "snyk": "^1.112.0",
+    "ts-node": "~7.0.1",
+    "tsickle": ">=0.34.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "~3.1.6"
+  }
+}
