@@ -1,7 +1,30 @@
-import { NgModule, ModuleWithProviders, ErrorHandler } from '@angular/core'
+import { NgModule, ModuleWithProviders, ErrorHandler, APP_INITIALIZER } from '@angular/core'
+import { HTTP_INTERCEPTORS } from '@angular/common/http'
+import { init } from '@sentry/browser'
 import { SentryErrorHandler } from './sentry.handler'
+import { SentryErrorInterceptor } from './sentry.interceptor'
 import { ModuleOptions, OPTIONS } from './options'
 
+/**
+ * Initializer function to setup sentry logging.
+ *
+ * @param - The module options
+ * @returns - A promise for waiting to be resolved
+ */
+export function initialize(options: ModuleOptions): () => Promise<void> {
+    // configure sentry's browser library
+    const promise = async (): Promise<void> => {
+        if (options.enabled) {
+            init(options.sentry)
+        }
+    }
+
+    return promise
+}
+
+/**
+ * Injectable http interceptor for sentry.
+ */
 @NgModule({
     imports: [],
     declarations: [],
@@ -9,8 +32,10 @@ import { ModuleOptions, OPTIONS } from './options'
 })
 export class SentryModule {
     /**
-     * Provides
-     * @param options
+     * Provides all necessary providers for sentry connection.
+     *
+     * @param - The module options
+     * @returns - The module with all providers
      */
     public static forRoot(options: ModuleOptions): ModuleWithProviders {
         return {
@@ -21,8 +46,19 @@ export class SentryModule {
                     useValue: options,
                 },
                 {
+                    provide: APP_INITIALIZER,
+                    useFactory: initialize,
+                    deps: [OPTIONS],
+                    multi: true,
+                },
+                {
                     provide: ErrorHandler,
                     useClass: SentryErrorHandler,
+                },
+                {
+                    provide: HTTP_INTERCEPTORS,
+                    useClass: SentryErrorInterceptor,
+                    multi: true,
                 },
             ],
         }

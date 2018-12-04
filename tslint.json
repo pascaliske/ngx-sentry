@@ -9,7 +9,7 @@
   "rules": {
     "array-type": [
       true,
-      "generic"
+      "array"
     ],
     "arrow-return-shorthand": true,
     "await-promise": true,
