@@ -3,7 +3,7 @@ import { captureException } from '@sentry/browser'
 import { ModuleOptions, OPTIONS } from './options'
 
 /**
- * Injectable error handler for sentry.
+ * Injectable error handler for Sentry.
  */
 @Injectable()
 export class SentryErrorHandler implements ErrorHandler {
@@ -20,7 +20,7 @@ export class SentryErrorHandler implements ErrorHandler {
      * @param - The error to handle.
      */
     public handleError(error: any): void {
-        // log to sentry
+        // log to Sentry
         if (this.options.enabled) {
             captureException(error.originalError || error)
         }

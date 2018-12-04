@@ -1,6 +1,8 @@
 import { NgModule, ModuleWithProviders, ErrorHandler, APP_INITIALIZER } from '@angular/core'
+import { HTTP_INTERCEPTORS } from '@angular/common/http'
 import { init } from '@sentry/browser'
 import { SentryErrorHandler } from './sentry.handler'
+import { SentryErrorInterceptor } from './sentry.interceptor'
 import { ModuleOptions, OPTIONS } from './options'
 
 /**
@@ -52,6 +54,11 @@ export class SentryModule {
                 {
                     provide: ErrorHandler,
                     useClass: SentryErrorHandler,
+                },
+                {
+                    provide: HTTP_INTERCEPTORS,
+                    useClass: SentryErrorInterceptor,
+                    multi: true,
                 },
             ],
         }
