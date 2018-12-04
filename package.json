@@ -1,6 +1,6 @@
 {
   "name": "ngx-sentry",
-  "description": "Angular error handler for Sentry service.",
+  "description": "Angular ErrorHandler and HttpInterceptor for Sentry.",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
