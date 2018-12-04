@@ -1,23 +1,18 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
-import { init, captureException } from '@sentry/browser'
+import { captureException } from '@sentry/browser'
 import { ModuleOptions, OPTIONS } from './options'
 
 /**
- * Injectable error handler for sentry.
+ * Injectable error handler for Sentry.
  */
 @Injectable()
 export class SentryErrorHandler implements ErrorHandler {
     /**
-     * Initializes the sentry instance.
+     * Initializes the sentry connected error handler.
      *
      * @param - The module options.
      */
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {
-        // configure sentry's browser library
-        if (this.options.enabled) {
-            init(this.options.sentry)
-        }
-    }
+    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {}
 
     /**
      * Handles any errors.
@@ -25,7 +20,7 @@ export class SentryErrorHandler implements ErrorHandler {
      * @param - The error to handle.
      */
     public handleError(error: any): void {
-        // log to sentry in production
+        // log to Sentry
         if (this.options.enabled) {
             captureException(error.originalError || error)
         }
