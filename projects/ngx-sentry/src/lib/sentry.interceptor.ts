@@ -3,7 +3,7 @@ import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@a
 import { captureMessage } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
-import { ModuleOptions, OPTIONS } from './options'
+import { ModuleOptions, OPTIONS } from './tokens'
 
 /**
  * Injectable HTTP interceptor for Sentry.

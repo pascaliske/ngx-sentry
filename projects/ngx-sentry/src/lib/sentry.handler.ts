@@ -1,6 +1,6 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
 import { captureException } from '@sentry/browser'
-import { ModuleOptions, OPTIONS } from './options'
+import { ModuleOptions, OPTIONS } from './tokens'
 
 /**
  * Injectable error handler for Sentry.

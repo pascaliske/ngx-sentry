@@ -1,9 +1,9 @@
-import { NgModule, ModuleWithProviders, ErrorHandler, APP_INITIALIZER } from '@angular/core'
+import { NgModule, ModuleWithProviders, ErrorHandler } from '@angular/core'
 import { HTTP_INTERCEPTORS } from '@angular/common/http'
 import { init } from '@sentry/browser'
 import { SentryErrorHandler } from './sentry.handler'
 import { SentryErrorInterceptor } from './sentry.interceptor'
-import { ModuleOptions, OPTIONS } from './options'
+import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
 
 /**
  * Initializer function to setup sentry logging.
@@ -11,19 +11,15 @@ import { ModuleOptions, OPTIONS } from './options'
  * @param - The module options
  * @returns - A promise for waiting to be resolved
  */
-export function initialize(options: ModuleOptions): () => Promise<void> {
+export function initializer(options: ModuleOptions): void {
     // configure sentry's browser library
-    const promise = async (): Promise<void> => {
-        if (options.enabled) {
-            init(options.sentry)
-        }
+    if (options.enabled) {
+        init(options.sentry)
     }
-
-    return promise
 }
 
 /**
- * Injectable http interceptor for sentry.
+ * Angular module for importing all Sentry related stuff.
  */
 @NgModule({
     imports: [],
@@ -46,18 +42,19 @@ export class SentryModule {
                     useValue: options,
                 },
                 {
-                    provide: APP_INITIALIZER,
-                    useFactory: initialize,
+                    provide: INITIALIZER,
+                    useFactory: initializer,
                     deps: [OPTIONS],
-                    multi: true,
                 },
                 {
                     provide: ErrorHandler,
                     useClass: SentryErrorHandler,
+                    deps: [OPTIONS, INITIALIZER],
                 },
                 {
                     provide: HTTP_INTERCEPTORS,
                     useClass: SentryErrorInterceptor,
+                    deps: [OPTIONS, INITIALIZER],
                     multi: true,
                 },
             ],
