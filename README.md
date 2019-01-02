@@ -14,10 +14,24 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
+Add the Sentry config to your environment file:
+
+```typescript
+export const environment = {
+    production: true,
+    sentry: {
+        dsn: 'https://your-sentry-dsn@sentry.io',
+    },
+}
+```
+
+Then import the `SentryModule` in your application. The `forRoot` method expects a boolean which enables the reporting and the sentry config.
+
 ```typescript
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SentryModule } from '@pascaliske/ngx-sentry'
+import { environment } from '../environments/environment'
 import { AppComponent } from './app.component'
 
 @NgModule({
