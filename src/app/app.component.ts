@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core'
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    public ngOnInit() {
+    public ngOnInit(): void {}
+
+    public trigger(): void {
+        console.log('==> trigger')
         throw new Error('DEMO!')
     }
 }
