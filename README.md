@@ -14,32 +14,22 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
-Add the Sentry config to your environment file:
-
-```typescript
-export const environment = {
-    production: true,
-    sentry: {
-        dsn: 'https://your-sentry-dsn@sentry.io',
-    },
-}
-```
-
-Then import the `SentryModule` in your application. The `forRoot` method expects a boolean which enables the reporting and the sentry config.
+Import the `SentryModule` with the `forRoot()` method in your applications main module. The `forRoot()` method expects an [options object](#options) with at least the following two keys: `enabled`, `sentry`.
 
 ```typescript
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SentryModule } from '@pascaliske/ngx-sentry'
-import { environment } from '../environments/environment'
 import { AppComponent } from './app.component'
 
 @NgModule({
     imports: [
         BrowserModule,
         SentryModule.forRoot({
-            enabled: environment.production,
-            sentry: environment.sentry,
+            enabled: true,
+            sentry: {
+                dsn: 'https://your-sentry-dsn@sentry.io',
+            },
         }),
     ],
     declarations: [AppComponent],
@@ -78,7 +68,6 @@ Enable or disable the [user reporting feature](https://docs.sentry.io/enriching-
 
 Type: `object`<br>
 Required: `false`<br>
-Default: `null`
 
 Configure the HTTP interceptor.
 
