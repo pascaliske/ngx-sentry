@@ -1,5 +1,5 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
-import { captureException } from '@sentry/browser'
+import { captureException, showReportDialog } from '@sentry/browser'
 import { ModuleOptions, OPTIONS } from './tokens'
 
 /**
@@ -23,6 +23,11 @@ export class SentryErrorHandler implements ErrorHandler {
         // log to Sentry
         if (this.options.enabled) {
             captureException(error.originalError || error)
+        }
+
+        // show report dialog
+        if (this.options.reporting) {
+            showReportDialog()
         }
 
         // re-throw error

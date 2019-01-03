@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core'
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@angular/common/http'
-import { captureMessage } from '@sentry/browser'
+import { captureMessage, showReportDialog } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 import { ModuleOptions, OPTIONS } from './tokens'
@@ -29,6 +29,11 @@ export class SentryErrorInterceptor implements HttpInterceptor {
                 // log to Sentry
                 if (res instanceof HttpErrorResponse && this.filter(res)) {
                     captureMessage(`Http request failed (${req.method}, ${res.status}, ${req.url})`)
+                }
+
+                // show report dialog
+                if (this.options.reporting) {
+                    showReportDialog()
                 }
 
                 // re-throw error

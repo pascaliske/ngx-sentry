@@ -66,6 +66,14 @@ Required: `true`
 
 Configure Sentry, see [here](https://docs.sentry.io/error-reporting/quickstart/?platform=browser#configure-the-sdk) for more information.
 
+### reporting
+
+Type: `boolean`<br>
+Required: `false`<br>
+Default: `false`
+
+Enable or disable the [user reporting feature](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser).
+
 ### http
 
 Type: `object`<br>
