@@ -7,6 +7,9 @@ export const OPTIONS = new InjectionToken<ModuleOptions>('options')
 export interface ModuleOptions {
     enabled: boolean
     sentry: BrowserOptions
-    whitelist?: number[]
-    blacklist?: number[]
+    http?: {
+        enabled?: boolean
+        whitelist?: number[]
+        blacklist?: number[]
+    }
 }
