@@ -48,6 +48,56 @@ import { AppComponent } from './app.component'
 export class AppModule {}
 ```
 
+## Options
+
+You can configure the library for yourself. The possible options for the `forRoot()` method are:
+
+### enabled
+
+Type: `boolean`<br>
+Required: `true`
+
+This flag allows to enable or disable the whole sentry tracking.
+
+### sentry
+
+Type: `object`<br>
+Required: `true`
+
+Configure Sentry, see [here](https://docs.sentry.io/error-reporting/quickstart/?platform=browser#configure-the-sdk) for more information.
+
+### http
+
+Type: `object`<br>
+Required: `false`<br>
+Default: `null`
+
+Configure the HTTP interceptor.
+
+#### http.enabled
+
+Type: `boolean`<br>
+Required: `false`<br>
+Default: `true`
+
+Enable or disable HTTP intercepting.
+
+#### http.whitelist
+
+Type: `Array<number>`<br>
+Required: `false`<br>
+Default: `null`
+
+Use a whitelist to filter the intercepted HTTP requests.
+
+#### http.blacklist
+
+Type: `Array<number>`<br>
+Required: `false`<br>
+Default: `null`
+
+Use a blacklist to filter the intercepted HTTP requests.
+
 ## License
 
 MIT © [Pascal Iske](https://pascal-iske.de)
