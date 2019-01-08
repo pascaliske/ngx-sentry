@@ -14,6 +14,8 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
+Import the `SentryModule` with the `forRoot()` method in your applications main module. The `forRoot()` method expects an [options object](#options) with at least the following two keys: `enabled`, `sentry`. More options can be found in the [options section](#options).
+
 ```typescript
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
@@ -24,8 +26,10 @@ import { AppComponent } from './app.component'
     imports: [
         BrowserModule,
         SentryModule.forRoot({
-            enabled: environment.production,
-            sentry: environment.sentry,
+            enabled: true,
+            sentry: {
+                dsn: 'https://your-sentry-dsn@sentry.io',
+            },
         }),
     ],
     declarations: [AppComponent],
@@ -33,6 +37,76 @@ import { AppComponent } from './app.component'
 })
 export class AppModule {}
 ```
+
+## Options
+
+You can configure the library for yourself. The possible options for the `forRoot()` method are:
+
+### enabled
+
+Type: `boolean`<br>
+Required: `true`
+
+This flag allows to enable or disable the whole sentry tracking.
+
+### sentry
+
+Type: `object`<br>
+Required: `true`
+
+Configure Sentry, see [here](https://docs.sentry.io/error-reporting/quickstart/?platform=browser#configure-the-sdk) for more information.
+
+### dialog
+
+Type: `boolean` | [`ReportDialogOptions`](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser#customizing-the-widget)<br>
+Required: `false`<br>
+Default: `false`
+
+Enable or disable the [reporting dialog](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser).
+
+### http
+
+Type: `object`<br>
+Required: `false`<br>
+
+Configure the HTTP interceptor.
+
+#### http.enabled
+
+Type: `boolean`<br>
+Required: `false`<br>
+Default: `true`
+
+Enable or disable HTTP intercepting.
+
+#### http.message
+
+Type: `string`<br>
+Required: `false`<br>
+Default: `Http request failed. ({method}, {status}, {url})`
+
+Customize the captured message for all intercepted HTTP errors. There are a few placeholders which get replaced before sending:
+
+- `{method}` - The request method
+- `{url}` - The requested url
+- `{status}` - The response status
+- `{message}` - The response message
+
+#### http.whitelist
+
+Type: `Array<number>`<br>
+Required: `false`<br>
+Default: `null`
+
+Use a whitelist of HTTP status codes to filter the intercepted HTTP requests. Only responses with whitelisted status codes get reported.
+
+#### http.blacklist
+
+Type: `Array<number>`<br>
+Required: `false`<br>
+Default: `null`
+
+Use a blacklist of HTTP status codes to filter the intercepted HTTP requests. All responses with blacklisted status codes will be skipped.
 
 ## License
 

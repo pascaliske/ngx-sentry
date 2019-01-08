@@ -1,7 +1,20 @@
 {
   "name": "@pascaliske/ngx-sentry",
   "description": "Angular ErrorHandler and HttpInterceptor for Sentry.",
-  "version": "1.1.0",
+  "version": "1.2.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pascal Iske",
+    "email": "info@pascal-iske.de",
+    "url": "https://pascal-iske.de"
+  },
+  "repository": {
+    "url": "https://github.com/pascaliske/ngx-sentry.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/pascaliske/ngx-sentry/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
