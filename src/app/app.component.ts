@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
-    public ngOnInit(): void {}
-
+export class AppComponent {
     public trigger(): void {
-        console.log('==> trigger')
         throw new Error('DEMO!')
     }
 }

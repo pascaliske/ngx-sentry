@@ -11,11 +11,8 @@ import { AppComponent } from './app.component'
             sentry: {
                 dsn: 'https://your-sentry-dsn@sentry.io',
             },
-            reporting: false,
             http: {
                 enabled: true,
-                blacklist: null,
-                whitelist: null,
             },
         }),
     ],
