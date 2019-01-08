@@ -14,7 +14,7 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
-Import the `SentryModule` with the `forRoot()` method in your applications main module. The `forRoot()` method expects an [options object](#options) with at least the following two keys: `enabled`, `sentry`.
+Import the `SentryModule` with the `forRoot()` method in your applications main module. The `forRoot()` method expects an [options object](#options) with at least the following two keys: `enabled`, `sentry`. More options can be found in the [options section](#options).
 
 ```typescript
 import { NgModule } from '@angular/core'
@@ -79,13 +79,26 @@ Default: `true`
 
 Enable or disable HTTP intercepting.
 
+#### http.message
+
+Type: `string`<br>
+Required: `false`<br>
+Default: `Http request failed. ({method}, {status}, {url})`
+
+Customize the captured message for all intercepted HTTP errors. There are a few placeholders which get replaced before sending:
+
+- `{method}` - The request method
+- `{url}` - The requested url
+- `{status}` - The response status
+- `{message}` - The response message
+
 #### http.whitelist
 
 Type: `Array<number>`<br>
 Required: `false`<br>
 Default: `null`
 
-Use a whitelist to filter the intercepted HTTP requests.
+Use a whitelist of HTTP status codes to filter the intercepted HTTP requests. Only responses with whitelisted status codes get reported.
 
 #### http.blacklist
 
@@ -93,7 +106,7 @@ Type: `Array<number>`<br>
 Required: `false`<br>
 Default: `null`
 
-Use a blacklist to filter the intercepted HTTP requests.
+Use a blacklist of HTTP status codes to filter the intercepted HTTP requests. All responses with blacklisted status codes will be skipped.
 
 ## License
 

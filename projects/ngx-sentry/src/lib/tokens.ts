@@ -10,6 +10,7 @@ export interface ModuleOptions {
     dialog?: true | ReportDialogOptions
     http?: {
         enabled?: boolean
+        message?: string
         whitelist?: number[]
         blacklist?: number[]
     }
