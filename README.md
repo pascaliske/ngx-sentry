@@ -56,13 +56,13 @@ Required: `true`
 
 Configure Sentry, see [here](https://docs.sentry.io/error-reporting/quickstart/?platform=browser#configure-the-sdk) for more information.
 
-### reporting
+### dialog
 
-Type: `boolean`<br>
+Type: `boolean` | [`ReportDialogOptions`](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser#customizing-the-widget)<br>
 Required: `false`<br>
 Default: `false`
 
-Enable or disable the [user reporting feature](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser).
+Enable or disable the [reporting dialog](https://docs.sentry.io/enriching-error-data/user-feedback/?platform=browser).
 
 ### http
 

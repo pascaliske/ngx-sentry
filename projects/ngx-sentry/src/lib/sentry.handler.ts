@@ -26,8 +26,8 @@ export class SentryErrorHandler implements ErrorHandler {
         }
 
         // show report dialog
-        if (this.options.reporting) {
-            showReportDialog()
+        if (this.options.dialog) {
+            showReportDialog(typeof this.options.dialog === 'object' ? this.options.dialog : null)
         }
 
         // re-throw error
