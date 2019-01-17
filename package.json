@@ -24,6 +24,7 @@
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
   },
@@ -62,6 +63,7 @@
     "@sentry/browser": "^4.4.2",
     "core-js": "^2.6.2",
     "rxjs": "~6.3.3",
+    "standard-changelog": "^2.0.6",
     "tslib": "^1.9.3",
     "zone.js": "~0.8.27"
   },
