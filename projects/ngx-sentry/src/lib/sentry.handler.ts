@@ -1,5 +1,5 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
-import { captureException, showReportDialog } from '@sentry/browser'
+import { captureException, showReportDialog } from '@sentry/browser/esm'
 import { ModuleOptions, OPTIONS } from './tokens'
 
 /**
