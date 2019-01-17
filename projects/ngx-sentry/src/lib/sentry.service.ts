@@ -7,7 +7,7 @@ import {
     Breadcrumb,
     Severity,
     SentryEvent,
-} from '@sentry/browser'
+} from '@sentry/browser/esm'
 import { OPTIONS, INITIALIZER } from './tokens'
 
 @Injectable({

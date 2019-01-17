@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@sentry/browser": "^4.4.1"
+    "@sentry/browser": "^4.5.2"
   },
   "peerDependencies": {
     "@angular/common": "^6.0.0 || ^7.0.0",
