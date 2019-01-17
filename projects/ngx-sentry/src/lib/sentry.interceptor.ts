@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core'
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@angular/common/http'
-import { captureMessage, showReportDialog } from '@sentry/browser/esm'
+import { captureMessage } from '@sentry/browser/esm'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 import { ModuleOptions, OPTIONS } from './tokens'
@@ -29,13 +29,6 @@ export class SentryErrorInterceptor implements HttpInterceptor {
                 // log to Sentry
                 if (response instanceof HttpErrorResponse && this.filter(response)) {
                     captureMessage(this.getMessage(request, response))
-                }
-
-                // show report dialog
-                if (this.options.dialog) {
-                    showReportDialog(
-                        typeof this.options.dialog === 'object' ? this.options.dialog : null,
-                    )
                 }
 
                 // re-throw error

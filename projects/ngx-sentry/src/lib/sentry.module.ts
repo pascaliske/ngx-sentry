@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders, ErrorHandler } from '@angular/core'
 import { HTTP_INTERCEPTORS } from '@angular/common/http'
-import { init } from '@sentry/browser/esm'
+import { init, showReportDialog } from '@sentry/browser/esm'
 import { SentryErrorHandler } from './sentry.handler'
 import { SentryErrorInterceptor } from './sentry.interceptor'
 import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
@@ -14,6 +14,18 @@ import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
 export function initializer(options: ModuleOptions): void {
     // configure sentry's browser library
     if (options.enabled) {
+        // show report dialog
+        if (options.dialog) {
+            options.sentry.beforeSend = event => {
+                if (event.exception) {
+                    showReportDialog(
+                        typeof options.dialog === 'object' ? options.dialog : undefined,
+                    )
+                }
+                return event
+            }
+        }
+
         init(options.sentry)
     }
 }
