@@ -45,7 +45,6 @@
     "@sentry/browser": "^4.5.3",
     "core-js": "^2.6.3",
     "rxjs": "~6.4.0",
-    "standard-changelog": "^2.0.6",
     "tslib": "^1.9.3",
     "zone.js": "~0.8.29"
   },
@@ -64,6 +63,7 @@
     "ng-packagr": "^4.7.0",
     "prettier": "^1.16.3",
     "snyk": "^1.124.0",
+    "standard-changelog": "^2.0.6",
     "ts-node": "~8.0.2",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.3",
