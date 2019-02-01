@@ -72,15 +72,15 @@
   optionalDependencies:
     node-sass "4.10.0"
 
-"@angular-devkit/build-ng-packagr@~0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.12.1.tgz#7b5734ae0bbf883b49b9663d85e971485093a5d3"
-  integrity sha512-3UyJh9lYhSiD77lqj6qpPOU9XuyGW/kti1Bk3SFtT4bFGvQLLC/meSvcHlpbS6RyLvi6djH+CbTzgApzlfPvbw==
+"@angular-devkit/build-ng-packagr@~0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.13.0.tgz#b02d4793bf6f1720f2defb5fecdca1377c0a15b0"
+  integrity sha512-Up7p300FJS7HJmZOvNZXzYsBRPqMJJKQGaOeINDPBsQFHcxIt4LQmQsqUa/4DEczR9Z2/KhlduXbNI+c7wmlgg==
   dependencies:
-    "@angular-devkit/architect" "0.12.1"
-    "@angular-devkit/core" "7.2.1"
+    "@angular-devkit/architect" "0.13.0"
+    "@angular-devkit/core" "7.3.0"
     rxjs "6.3.3"
-    semver "5.5.1"
+    semver "5.6.0"
 
 "@angular-devkit/build-optimizer@0.12.1":
   version "0.12.1"
