@@ -123,17 +123,6 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@7.2.1":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.2.1.tgz#9c1c784f4a81a3a840fa4a1435948c6203be6062"
-  integrity sha512-jEhwkeDn8exgJBfUwMc6rdtDkxHJkUmKPTn4M436bkMMMa9KFPFbPpzp9weKpB3SbRjM3Mu90JprO4C7qDtCcg==
-  dependencies:
-    ajv "6.7.0"
-    chokidar "2.0.4"
-    fast-json-stable-stringify "2.0.0"
-    rxjs "6.3.3"
-    source-map "0.7.3"
-
 "@angular-devkit/schematics@7.3.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.0.tgz#112c1f59ff2778157aff6fb7484a6c132d4156ac"
