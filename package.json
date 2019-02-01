@@ -33,24 +33,6 @@
       "typescript"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint --env HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "commitlint": {
-    "extends": ["@commitlint/config-conventional"],
-    "rules": {
-      "header-max-length": [2, "always", 100]
-    }
-  },
-  "lint-staged": {
-    "{src,projects}/**/*.ts": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "dependencies": {
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
