@@ -20,7 +20,7 @@
     "ng": "ng",
     "start": "ng serve ngx-sentry-demo",
     "build": "ng build --prod",
-    "postbuild": "cp README.md dist/ngx-sentry/README.md && cp LICENSE.md dist/ngx-sentry/LICENSE.md",
+    "postbuild": "cp README.md dist/ngx-sentry/README.md && cp LICENSE.md dist/ngx-sentry/LICENSE.md && cp CHANGELOG.md dist/ngx-sentry/CHANGELOG.md",
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
