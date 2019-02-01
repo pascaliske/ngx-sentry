@@ -19,7 +19,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-sentry-demo",
-    "build": "ng build",
+    "build": "ng build --prod",
     "postbuild": "cp README.md dist/ngx-sentry/README.md && cp LICENSE.md dist/ngx-sentry/LICENSE.md",
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
