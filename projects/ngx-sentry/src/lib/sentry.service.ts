@@ -55,4 +55,8 @@ export class SentryService {
     public captureEvent(event: SentryEvent): string {
         return captureEvent(event)
     }
+
+    // TODO: Implement "configureScope" method from @sentry/browser.
+
+    // TODO: Implement "withScope" method from @sentry/browser.
 }
