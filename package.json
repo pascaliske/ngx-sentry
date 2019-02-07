@@ -62,7 +62,7 @@
     "lint-staged": "^8.1.1",
     "ng-packagr": "^4.7.0",
     "prettier": "^1.16.3",
-    "snyk": "^1.124.0",
+    "snyk": "^1.126.0",
     "standard-changelog": "^2.0.6",
     "ts-node": "~8.0.2",
     "tsickle": ">=0.34.0",
