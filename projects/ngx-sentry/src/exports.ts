@@ -1,8 +1,8 @@
 /*
  * Public API Surface of ngx-sentry
  */
-export * from './lib/sentry.module'
-export * from './lib/sentry.handler'
-export * from './lib/sentry.interceptor'
-export * from './lib/sentry.service'
-export { ModuleOptions } from './lib/tokens'
+export { ModuleOptions, INITIALIZER, OPTIONS } from './lib/tokens'
+export { SentryModule, initializer } from './lib/sentry.module'
+export { SentryErrorHandler } from './lib/sentry.handler'
+export { SentryErrorInterceptor } from './lib/sentry.interceptor'
+export { SentryService } from './lib/sentry.service'

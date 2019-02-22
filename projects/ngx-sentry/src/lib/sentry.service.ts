@@ -4,9 +4,12 @@ import {
     captureMessage,
     captureException,
     captureEvent,
+    configureScope,
+    withScope,
     Breadcrumb,
     Severity,
     SentryEvent,
+    Scope,
 } from '@sentry/browser/esm'
 import { OPTIONS, INITIALIZER } from './tokens'
 
@@ -54,5 +57,23 @@ export class SentryService {
      */
     public captureEvent(event: SentryEvent): string {
         return captureEvent(event)
+    }
+
+    /**
+     * Configure a {@link Scope}.
+     *
+     * @param - A callback for configuring the scope
+     */
+    public configureScope(callback: (scope: Scope) => void): void {
+        configureScope(callback)
+    }
+
+    /**
+     * Using a local {@link Scope}.
+     *
+     * @param - A callback for using the scope
+     */
+    public withScope(callback: (scope: Scope) => void): void {
+        withScope(callback)
     }
 }
