@@ -1,3 +1,17 @@
+## [1.3.3](https://github.com/pascaliske/ngx-sentry/compare/v1.3.2...v1.3.3) (2019-02-22)
+
+
+### Bug Fixes
+
+* **exports:** export all parts manually ([cdcc86a](https://github.com/pascaliske/ngx-sentry/commit/cdcc86a))
+
+
+### Features
+
+* **sentry:** add scope methods for configuring and using sentry scopes ([cd6e299](https://github.com/pascaliske/ngx-sentry/commit/cd6e299))
+
+
+
 ## [1.3.2](https://github.com/pascaliske/ngx-sentry/compare/v1.3.1...v1.3.2) (2019-02-01)
 
 
