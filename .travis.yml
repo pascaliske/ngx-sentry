@@ -3,15 +3,12 @@ node_js:
   - '8'
   - '9'
   - '10'
-before_install: yarn global add greenkeeper-lockfile@1
 install:
   - yarn install
-before_script: greenkeeper-lockfile-update
 script:
   - yarn run lint
   - yarn run check
   - yarn run build --prod
-after_script: greenkeeper-lockfile-upload
 before_deploy:
   - cd dist/ngx-sentry
 deploy:
@@ -24,9 +21,6 @@ deploy:
     tags: true
     branch: master
     node: 10
-env:
-  global:
-    - secure: fzDZtJYSwMePdkHcbZtF9O8ypV4iCy1O+9nE9gg9fWBVu0O6WSyqy4qStB+iCrvHfLYX/ZekvBrHcui49Rj0RBAErRwI3rrgWsYKnNX43ps1qfxesG8ppSsGXiyptrTABKe3e5EFN5I2BOh55tnfHE16uLYwoWyWO6wQeytnTa4ch3f3IuUQJjX/sEdvr8WN8AwTTmDXiPTPyf4S8bVGYw1qQ32SbEbtXBlXWxQH+y1GdRhWrOGRGYlnGQNT/zbWZYFMwXAv+0hx0KTREiw2YXBfUcEX9r/QNqXjKBIdzGYjicbyklk8YQeqgBKe8gAnqqex7WhVwIVYjK2qhZj+ZQVJoBEf8fpYkZHNj995n8u2yksZ8LfDx1gG8T3lL2w+nYuKVATKmLcoIDFN7x/8PuoJUJYLv7jYHJuRoOif+yDdG25Kt4P3FTkkITF94ffSF7dV0ABB5NzKI1xf5XUPbZVfFwP6OHSgzEEjICV2A2i0ygnZQVKfOtreMky1SOedKperI/d3gyNNDffBDZHYfqJSZlyOdX6DYDAQfoeNqI9h+3FZIUMg6Gyr57Ioo9vgVE/+1SsHLdRmlgBcgp/hT5FL3U8vEWK+p7w1bQc/vSw/1PSIAy+z/ogvBXMU4eBDw9Zg2iDjfPe8uuwpe1ET3Y3PlZ/ItIwZIZHxcKUcO+Y=
 notifications:
   slack:
     secure: eWI+L5YntaVGB1ydN2rNeurwBLsTYVMLFYvfPGe67i3pFmvWLJjXW3wrU92sPf8w1/6HvqBk+Dnr1FJDXaRsJzw/9NNqI7kFH2069HSWR5pnfBIQBakr1a6jLt5xxtDgqYex534Ajz1B6GvIq0Gxvk0+FXQIZjdbc6xnC0wEQhq1BKQrsWkx5dVcSIfF3KmUW2KS2qELPp3VHT9hKs/djUsZnEo2VvknDSksMbVReb8Ys2WaHxtJhiBXhYqSVg6VL6AJHJN+MK/CgdSzvygBBC7IymSau4cYWpUemcQfEH+rIxluZj6dfIWnNbdwYbHD45sbs7cy1wdKtCrnR/UgyZ0Y8wDfETkWcv5X37hjKyeTwrpdKdR2xsIJVaNFumcoPB4GTu8RGMvI9CB1j8gxgdXoJ0FLUQ3Wp6WpXYfF7nCpmyvo8bb3CelGcjKbYxs44tAFHtHaZpfML1PKkRHpBs8+DihBbGQkLuxOmYnFHNihCUbbjb5QCx2ufSU6VncbP/MUoqmR2OUgNpUpAc4d0k5UGKOJfqqvx9+44MsIWfHcEsjku1HTeBpZRQvZvqvSzkXmF2PIiKn1oAg8M7ePlC3SAmXkadsKnxdjFPjWxGLK27Pr0hRFZbxQvsYeGj5qmOOiTFhnmgNGcYOh+DPSwHOHZB3bRxrv4YyzTrpk73w=
