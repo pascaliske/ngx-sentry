@@ -1,14 +1,13 @@
 language: node_js
 node_js:
-  - '8'
-  - '9'
+  - '11'
   - '10'
 install:
   - yarn install
 script:
   - yarn run lint
   - yarn run check
-  - yarn run build --prod
+  - yarn run build
 before_deploy:
   - cd dist/ngx-sentry
 deploy:
@@ -20,7 +19,7 @@ deploy:
   on:
     tags: true
     branch: master
-    node: 10
+    node: 11
 notifications:
   slack:
     secure: eWI+L5YntaVGB1ydN2rNeurwBLsTYVMLFYvfPGe67i3pFmvWLJjXW3wrU92sPf8w1/6HvqBk+Dnr1FJDXaRsJzw/9NNqI7kFH2069HSWR5pnfBIQBakr1a6jLt5xxtDgqYex534Ajz1B6GvIq0Gxvk0+FXQIZjdbc6xnC0wEQhq1BKQrsWkx5dVcSIfF3KmUW2KS2qELPp3VHT9hKs/djUsZnEo2VvknDSksMbVReb8Ys2WaHxtJhiBXhYqSVg6VL6AJHJN+MK/CgdSzvygBBC7IymSau4cYWpUemcQfEH+rIxluZj6dfIWnNbdwYbHD45sbs7cy1wdKtCrnR/UgyZ0Y8wDfETkWcv5X37hjKyeTwrpdKdR2xsIJVaNFumcoPB4GTu8RGMvI9CB1j8gxgdXoJ0FLUQ3Wp6WpXYfF7nCpmyvo8bb3CelGcjKbYxs44tAFHtHaZpfML1PKkRHpBs8+DihBbGQkLuxOmYnFHNihCUbbjb5QCx2ufSU6VncbP/MUoqmR2OUgNpUpAc4d0k5UGKOJfqqvx9+44MsIWfHcEsjku1HTeBpZRQvZvqvSzkXmF2PIiKn1oAg8M7ePlC3SAmXkadsKnxdjFPjWxGLK27Pr0hRFZbxQvsYeGj5qmOOiTFhnmgNGcYOh+DPSwHOHZB3bRxrv4YyzTrpk73w=
