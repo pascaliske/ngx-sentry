@@ -24,7 +24,7 @@
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
-    "changelog": "standard-changelog --release-count 1",
+    "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
   },
