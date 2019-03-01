@@ -18,11 +18,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@sentry/browser": "^4.5.2"
-  },
   "peerDependencies": {
     "@angular/common": "^6.0.0 || ^7.0.0",
-    "@angular/core": "^6.0.0 || ^7.0.0"
+    "@angular/core": "^6.0.0 || ^7.0.0",
+    "@sentry/browser": "^4.5.2"
   }
 }
