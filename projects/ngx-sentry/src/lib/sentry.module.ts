@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders, ErrorHandler } from '@angular/core'
 import { HTTP_INTERCEPTORS } from '@angular/common/http'
-import { init, showReportDialog } from '@sentry/browser/esm'
+import { init, showReportDialog } from '@sentry/browser'
 import { SentryErrorHandler } from './sentry.handler'
 import { SentryErrorInterceptor } from './sentry.interceptor'
 import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
