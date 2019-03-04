@@ -1,7 +1,7 @@
 {
   "name": "ngx-sentry",
   "description": "Angular ErrorHandler and HttpInterceptor for Sentry.",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
@@ -42,7 +42,6 @@
     "@angular/platform-browser": "~7.2.6",
     "@angular/platform-browser-dynamic": "~7.2.6",
     "@angular/router": "~7.2.6",
-    "@sentry/browser": "^4.6.3",
     "core-js": "^2.6.5",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.3",
@@ -56,6 +55,7 @@
     "@angular/language-service": "~7.2.6",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
+    "@sentry/browser": "^4.6.4",
     "@types/node": "~11.10.0",
     "codelyzer": "~4.5.0",
     "husky": "^1.3.1",

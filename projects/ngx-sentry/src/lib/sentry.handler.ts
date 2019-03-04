@@ -1,5 +1,5 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
-import { captureException } from '@sentry/browser/esm'
+import { captureException } from '@sentry/browser'
 import { ModuleOptions, OPTIONS } from './tokens'
 
 /**

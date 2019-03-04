@@ -4,9 +4,17 @@
 
 This library provides an [`ErrorHandler`](https://angular.io/api/core/ErrorHandler) and a [`HttpInterceptor`](https://angular.io/guide/http#intercepting-requests-and-responses) for connecting an Angular application with [Sentry](https://sentry.io) service.
 
+## Requirements
+
+To use this library you need to install the `@sentry/browser` library into your project
+
+```bash
+$ yarn add @sentry/browser
+```
+
 ## Installation
 
-To install the module use the following command:
+To install the library itself use the following command:
 
 ```bash
 $ yarn add @pascaliske/ngx-sentry
@@ -37,6 +45,11 @@ import { AppComponent } from './app.component'
 })
 export class AppModule {}
 ```
+
+> **Pro tip:** You can reduce your bundle size by using [Sentry's ESM build](https://github.com/getsentry/sentry-javascript). It can be enabled by aliasing it with webpack:
+> ```typescript
+> config.resolve.alias['@sentry/browser'] = '@sentry/browser/esm'
+> ```
 
 ## Options
 
