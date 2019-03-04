@@ -10,7 +10,7 @@ import {
     Severity,
     SentryEvent,
     Scope,
-} from '@sentry/browser/esm'
+} from '@sentry/browser'
 import { OPTIONS, INITIALIZER } from './tokens'
 
 @Injectable({
