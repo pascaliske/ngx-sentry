@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core'
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@angular/common/http'
-import * as Sentry from '@sentry/browser'
+import { captureMessage } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 import { ModuleOptions, OPTIONS } from './tokens'
@@ -28,7 +28,7 @@ export class SentryErrorInterceptor implements HttpInterceptor {
             catchError(response => {
                 // log to Sentry
                 if (response instanceof HttpErrorResponse && this.filter(response)) {
-                    Sentry.captureMessage(this.getMessage(request, response))
+                    captureMessage(this.getMessage(request, response))
                 }
 
                 // re-throw error
