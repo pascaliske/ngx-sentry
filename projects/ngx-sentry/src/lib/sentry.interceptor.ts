@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core'
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@angular/common/http'
-import { captureMessage } from '@sentry/browser/esm'
+import { captureMessage } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
 import { ModuleOptions, OPTIONS } from './tokens'

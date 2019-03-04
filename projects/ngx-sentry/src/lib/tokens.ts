@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core'
-import { BrowserOptions, ReportDialogOptions } from '@sentry/browser/esm'
+import { BrowserOptions, ReportDialogOptions } from '@sentry/browser'
 
 /**
  * Injection tokens.
