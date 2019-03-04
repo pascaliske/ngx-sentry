@@ -1,3 +1,13 @@
+# [1.4.0](https://github.com/pascaliske/ngx-sentry/compare/v1.3.4...v1.4.0) (2019-03-04)
+
+
+### Bug Fixes
+
+* **sentry:** change sentry imports ([255ec57](https://github.com/pascaliske/ngx-sentry/commit/255ec57))
+* **sentry:** move sentry library to peer dependencies ([e882e02](https://github.com/pascaliske/ngx-sentry/commit/e882e02))
+
+
+
 ## [1.3.4](https://github.com/pascaliske/ngx-sentry/compare/v1.3.3...v1.3.4) (2019-02-22)
 
 
