@@ -6,7 +6,7 @@ install:
   - yarn install
 script:
   - yarn run lint
-  - if [ $TRAVIS_PULL_REQUEST != true ]; then yarn run check; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then yarn run check; fi
   - yarn run build
 before_deploy:
   - cd dist/ngx-sentry
