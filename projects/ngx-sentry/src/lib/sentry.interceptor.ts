@@ -44,7 +44,11 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      * @returns - An boolean describing if the response should be handled
      */
     private filter(response: HttpErrorResponse): boolean {
-        if (!this.options.enabled || (this.options.http && this.options.http.enabled === false)) {
+        if (!this.options.enabled) {
+            return false
+        }
+
+        if (!this.options.http || this.options.http.enabled === false) {
             return false
         }
 
