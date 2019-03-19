@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/pascaliske/ngx-sentry/compare/v1.4.0...v1.4.1) (2019-03-19)
+
+
+### Bug Fixes
+
+* optional and missing http property should not raise error ([375ff99](https://github.com/pascaliske/ngx-sentry/commit/375ff99))
+
+
+
 # [1.4.0](https://github.com/pascaliske/ngx-sentry/compare/v1.3.4...v1.4.0) (2019-03-04)
 
 
