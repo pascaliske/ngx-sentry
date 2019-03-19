@@ -22,7 +22,7 @@
     "build": "ng build --prod",
     "postbuild": "cp README.md dist/ngx-sentry/README.md && cp LICENSE.md dist/ngx-sentry/LICENSE.md && cp CHANGELOG.md dist/ngx-sentry/CHANGELOG.md",
     "lint": "ng lint",
-    "check": "[[ $TRAVIS_PULL_REQUEST == false ]] && snyk test && snyk monitor",
+    "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
     "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
