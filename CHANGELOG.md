@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/pascaliske/ngx-sentry/compare/v1.4.1...v2.0.0) (2019-04-03)
+
+
+### Bug Fixes
+
+* **package:** update core-js to version 3.0.0 ([e26b349](https://github.com/pascaliske/ngx-sentry/commit/e26b349))
+
+
+### BREAKING CHANGES
+
+* Upgrade peer dependency of @sentry/browser to >= v5.0.5 for smaller bundle sizes.
+
+
+
 ## [1.4.1](https://github.com/pascaliske/ngx-sentry/compare/v1.4.0...v1.4.1) (2019-03-19)
 
 

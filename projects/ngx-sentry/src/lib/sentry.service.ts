@@ -8,7 +8,7 @@ import {
     withScope,
     Breadcrumb,
     Severity,
-    SentryEvent,
+    Event,
     Scope,
 } from '@sentry/browser'
 import { OPTIONS, INITIALIZER } from './tokens'
@@ -50,12 +50,12 @@ export class SentryService {
     }
 
     /**
-     * Capture an {@link SentryEvent}.
+     * Capture an {@link Event}.
      *
      * @param - The event to report
      * @returns - Returns the generated event id
      */
-    public captureEvent(event: SentryEvent): string {
+    public captureEvent(event: Event): string {
         return captureEvent(event)
     }
 
