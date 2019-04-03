@@ -21,6 +21,6 @@
   "peerDependencies": {
     "@angular/common": "^6.0.0 || ^7.0.0",
     "@angular/core": "^6.0.0 || ^7.0.0",
-    "@sentry/browser": "^4.5.2"
+    "@sentry/browser": "^5.0.5"
   }
 }
