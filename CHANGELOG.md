@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/pascaliske/ngx-sentry/compare/v2.0.0...v2.1.0) (2019-06-05)
+
+
+### Features
+
+* compatibility update for angular v8 ([288fc99](https://github.com/pascaliske/ngx-sentry/commit/288fc99)), closes [#42](https://github.com/pascaliske/ngx-sentry/issues/42) [#43](https://github.com/pascaliske/ngx-sentry/issues/43) [#47](https://github.com/pascaliske/ngx-sentry/issues/47) [#48](https://github.com/pascaliske/ngx-sentry/issues/48) [#49](https://github.com/pascaliske/ngx-sentry/issues/49)
+
+
+
 # [2.0.0](https://github.com/pascaliske/ngx-sentry/compare/v1.4.1...v2.0.0) (2019-04-03)
 
 
