@@ -34,33 +34,33 @@
     ]
   },
   "dependencies": {
-    "@angular/animations": "~7.2.12",
-    "@angular/common": "~7.2.12",
-    "@angular/compiler": "~7.2.12",
-    "@angular/core": "~7.2.12",
-    "@angular/forms": "~7.2.12",
-    "@angular/platform-browser": "~7.2.12",
-    "@angular/platform-browser-dynamic": "~7.2.12",
-    "@angular/router": "~7.2.12",
+    "@angular/animations": "~8.0.0",
+    "@angular/common": "~8.0.0",
+    "@angular/compiler": "~8.0.0",
+    "@angular/core": "~8.0.0",
+    "@angular/forms": "~8.0.0",
+    "@angular/platform-browser": "~8.0.0",
+    "@angular/platform-browser-dynamic": "~8.0.0",
+    "@angular/router": "~8.0.0",
     "core-js": "^2.6.5",
-    "rxjs": "~6.4.0",
+    "rxjs": "~6.5.2",
     "tslib": "^1.9.3",
-    "zone.js": "~0.8.29"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.7",
-    "@angular-devkit/build-ng-packagr": "~0.13.7",
-    "@angular/cli": "~7.3.7",
-    "@angular/compiler-cli": "~7.2.12",
-    "@angular/language-service": "~7.2.12",
+    "@angular-devkit/build-angular": "~0.800.0",
+    "@angular-devkit/build-ng-packagr": "~0.800.0",
+    "@angular/cli": "~8.0.1",
+    "@angular/compiler-cli": "~8.0.0",
+    "@angular/language-service": "~8.0.0",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@sentry/browser": "^5.0.5",
     "@types/node": "~12.0.0",
-    "codelyzer": "~5.0.0",
+    "codelyzer": "^5.0.1",
     "husky": "^2.0.0",
     "lint-staged": "^8.1.5",
-    "ng-packagr": "^5.0.1",
+    "ng-packagr": "^5.2.0",
     "prettier": "^1.16.4",
     "snyk": "^1.147.2",
     "standard-changelog": "^2.0.7",
@@ -69,6 +69,6 @@
     "tslib": "^1.9.3",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "~3.2.2"
+    "typescript": "~3.4.5"
   }
 }
