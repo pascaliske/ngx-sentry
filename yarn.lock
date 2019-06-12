@@ -1087,7 +1087,7 @@ autoprefixer@9.5.1:
     postcss "^7.0.14"
     postcss-value-parser "^3.3.1"
 
-autoprefixer@^9.0.0:
+autoprefixer@^9.6.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.6.0.tgz#0111c6bde2ad20c6f17995a33fad7cf6854b4c87"
   integrity sha512-kuip9YilBqhirhHEGHaBTZKXL//xxGnzvsD0FtBQa6z+A69qZD6s/BAX9VzDF1i9VKDquTJDQaPLSEhOnL6FvQ==
@@ -5297,13 +5297,13 @@ netmask@^1.0.6:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
   integrity sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU=
 
-ng-packagr@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-5.2.0.tgz#a27af1aa3861eea5905223174b3a73848ab33bf7"
-  integrity sha512-OZLBm9NUai8v5uKn7K1h9RyC2g1RG4G905j7VS3p9zphqkF+LYs7u7xDz+Shmtnk39YsyvDsL0xxMD9WRoATKg==
+ng-packagr@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-5.3.0.tgz#92434ca05ecbd1e01fe961a66c8a9a66b095f6fa"
+  integrity sha512-i+964lzZC7VVzatDCLDZndiXTog1XGozY7K1Bs78+uBF8O1YHNQP9wB9C5fR4uEaSKVhCWEBYekoS69flCugMA==
   dependencies:
     "@ngtools/json-schema" "^1.1.0"
-    autoprefixer "^9.0.0"
+    autoprefixer "^9.6.0"
     browserslist "^4.0.0"
     chalk "^2.3.1"
     chokidar "^3.0.0"
@@ -5315,7 +5315,6 @@ ng-packagr@^5.2.0:
     less "^3.8.0"
     less-plugin-npm-import "^2.1.0"
     node-sass-tilde-importer "^1.0.0"
-    opencollective-postinstall "^2.0.1"
     postcss "^7.0.0"
     postcss-url "^8.0.0"
     read-pkg-up "^5.0.0"
@@ -5328,7 +5327,7 @@ ng-packagr@^5.2.0:
     rxjs "^6.0.0"
     sass "^1.17.3"
     stylus "^0.54.5"
-    terser "^3.16.1"
+    terser "^4.0.0"
     update-notifier "^3.0.0"
 
 nice-try@^1.0.4:
@@ -5620,11 +5619,6 @@ open@6.2.0:
   integrity sha512-Vxf6HJkwrqmvh9UAID3MnMYXntbTxKLOSfOnO7LJdzPf3NE3KQYFNV0/Lcz2VAndbRFil58XVCyh8tiX11fiYw==
   dependencies:
     is-wsl "^1.1.0"
-
-opencollective-postinstall@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
-  integrity sha512-pVOEP16TrAO2/fjej1IdOyupJY8KDUM1CvsaScRbw6oddvpQoOfGk4ywha0HKKVAD6RkW4x6Q+tNBwhf3Bgpuw==
 
 opn@^5.5.0:
   version "5.5.0"
