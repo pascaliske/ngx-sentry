@@ -4,6 +4,3 @@ reviewers:
   - pascaliske
 assignees:
   - pascaliske
-skipKeywords:
-  - chore(deps)
-  - chore(deps-dev)
