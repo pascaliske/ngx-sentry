@@ -1,0 +1,9 @@
+version: 1
+update_configs:
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "live"
+    target_branch: "develop"
+    commit_message:
+      prefix: "chore"
+      include_scope: true
