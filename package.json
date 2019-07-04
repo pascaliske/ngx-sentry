@@ -56,7 +56,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@sentry/browser": "^5.4.3",
-    "@types/node": "~12.0.10",
+    "@types/node": "~12.0.12",
     "codelyzer": "^5.0.1",
     "husky": "^3.0.0",
     "lint-staged": "^9.0.2",
