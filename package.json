@@ -65,7 +65,7 @@
     "snyk": "^1.193.2",
     "standard-changelog": "^2.0.7",
     "ts-node": "~8.3.0",
-    "tsickle": "^0.35.0",
+    "tsickle": "^0.36.0",
     "tslib": "^1.10.0",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
