@@ -52,7 +52,7 @@
     "@angular-devkit/build-ng-packagr": "~0.801.1",
     "@angular/cli": "~8.1.2",
     "@angular/compiler-cli": "~8.0.3",
-    "@angular/language-service": "~8.1.1",
+    "@angular/language-service": "~8.1.2",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@sentry/browser": "^5.5.0",
