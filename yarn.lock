@@ -6276,10 +6276,10 @@ netmask@^1.0.6:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
   integrity sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU=
 
-ng-packagr@^5.5.1:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-5.5.1.tgz#2d27968c1079fba12ff2ae542beab82747a92e7b"
-  integrity sha512-GT6QK5WAirQwALdeJPiXdgRd5PzRqcknb/C/G+cCDEbUFri4oGVmns2Nl4I0FGg/cRn6nXTxRiUunOSqZ3Lehw==
+ng-packagr@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-5.6.0.tgz#8783df7f7741dbfaa683a8a74dd30944f7dcb2f3"
+  integrity sha512-aWPAtBxfIU4hIXQENHlDJhdVlGpi58cqaKvzaH3v5Ur++qsEqyc6K160TK1KV9JQ+cqMcWvTL1q+49zugHKrGg==
   dependencies:
     ajv "^6.10.2"
     autoprefixer "^9.6.0"
