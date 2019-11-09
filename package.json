@@ -61,7 +61,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "ng-packagr": "^5.7.1",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.0",
     "snyk": "^1.244.0",
     "standard-changelog": "^2.0.15",
     "ts-node": "~8.4.1",
