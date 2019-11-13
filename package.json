@@ -55,7 +55,7 @@
     "@angular/language-service": "~8.2.13",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@sentry/browser": "^5.8.0",
+    "@sentry/browser": "^5.9.0",
     "@types/node": "~12.12.7",
     "codelyzer": "^5.2.0",
     "husky": "^3.0.9",
