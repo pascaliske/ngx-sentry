@@ -2823,10 +2823,10 @@ conventional-changelog-angular@^5.0.6:
     compare-func "^1.3.1"
     q "^1.5.1"
 
-conventional-changelog-core@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.1.3.tgz#5b560c1b54aa16bdae3569e2799c4c7fd166ba87"
-  integrity sha512-VNDecw0N/osMiFHbb20R1PzxwbSZMdyCyJmc95mmElPrruOsJuKEozMBi0JJuOY7kXJ7kO/TbFDRviJg4z0feA==
+conventional-changelog-core@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-core/-/conventional-changelog-core-4.1.4.tgz#39be27fca6ef20a0f998d7a3a1e97cfa8a055cb6"
+  integrity sha512-LO58ZbEpp1Ul+y/vOI8rJRsWkovsYkCFbOCVgi6UnVfU8WC0F8K8VQQwaBZWWUpb6JvEiN4GBR5baRP2txZ+Vg==
   dependencies:
     add-stream "^1.0.0"
     conventional-changelog-writer "^4.0.11"
@@ -8863,15 +8863,15 @@ ssri@^6.0.0, ssri@^6.0.1:
   dependencies:
     figgy-pudding "^3.5.1"
 
-standard-changelog@^2.0.20:
-  version "2.0.20"
-  resolved "https://registry.yarnpkg.com/standard-changelog/-/standard-changelog-2.0.20.tgz#4c97c3bd46b44c54c52d36f0f4c4f14d64f34c7d"
-  integrity sha512-F4rYrwFCJbupQoi1qrvXnqU1/ZiPfnT5O1E8B/CB0tHZlLBgqRbp5mcm4eik+VcaxmDjxOulsAS+pHQI1pExNw==
+standard-changelog@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/standard-changelog/-/standard-changelog-2.0.21.tgz#dd1272e997d379fbb8130f185cb486b122c3cfd1"
+  integrity sha512-mZYtd9tNMVLlz+eeQakSPJ4bC9CDkcwFwshiuk/QpKbnLu3WT1oWR1kItHhUsn9qiskaRdyGMq2f2XZ4/Bi3+Q==
   dependencies:
     add-stream "^1.0.0"
     chalk "^2.0.0"
     conventional-changelog-angular "^5.0.6"
-    conventional-changelog-core "^4.1.3"
+    conventional-changelog-core "^4.1.4"
     figures "^3.0.0"
     fs-access "^1.0.0"
     lodash "^4.17.15"
