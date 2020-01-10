@@ -64,7 +64,7 @@
     "prettier": "^1.19.1",
     "snyk": "^1.278.0",
     "standard-changelog": "^2.0.21",
-    "ts-node": "~8.6.0",
+    "ts-node": "~8.6.1",
     "tsickle": "^0.36.0",
     "tslib": "^1.10.0",
     "tslint": "^5.20.1",
