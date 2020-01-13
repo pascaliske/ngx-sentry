@@ -45,7 +45,7 @@ export class SentryModule {
      * @param - The module options
      * @returns - The module with all providers
      */
-    public static forRoot(options: ModuleOptions): ModuleWithProviders {
+    public static forRoot(options: ModuleOptions): ModuleWithProviders<SentryModule> {
         return {
             ngModule: SentryModule,
             providers: [

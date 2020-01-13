@@ -1,7 +1,7 @@
 language: node_js
 node_js:
+  - '13'
   - '12'
-  - '11'
 install:
   - yarn install --frozen-lockfile
 script:
@@ -19,7 +19,7 @@ deploy:
   on:
     tags: true
     branch: master
-    node: 12
+    node: 13
 env:
   global:
     - secure: ViDFRuNkzwllvPr/amLLb+xUQ4pbAr4f56E59g7HcIzlOq6LKFWyH3mJsyWSrcr1bQOKbgNEI1295IxPOfpTfQfserL09AkxM4dnKxoV8XWVeqoqDf8Sg53DVJK2cnGDsHwVAyjoGhXZ4Ck8cW+jXfFZO5RbVze1T3rxX2HX6scQ9uXPdxK66YKFhVD1apuZIPrWgHQQRHguLhW2/CIa5Di8cdxWe8ffWSIKfvPt3OYxoTqx7Vjtshnj0VnuweIfuieKspq+InhMFKrCh5XE3r61R6LioOrPARMe4kI/Rjd5+DJkl/z0+J9njzMmmXXl7EuqV8VCOs/hv0laEUQtmEbOR7a9CwMr1i0WwWkFQ8Brx31RE7CnCCnnkXUL7/WXLMcM3duQ+vpXhlLSmVqnD/fQtQm4Vqq5yZ9fwhJb+EoHNwqdSbXWIl6XTBlcF/8ZEucBbUwZ1JVbgqPmvzC0dAES2NpaT2iADj6o+sNZN+xWVnOxkP8OIXNzfnsPPg58qR2EQYq6sKht4Ade8n9uAbrMpjw2ews6cCMYviILZ2VFvcb3dTKxjYMhzaPWtPfhl6a9W4slMyMnrsTJqGWva/TuxzSy2gQURkxdKXpoIJMzOZc575vRSbSq8yWa3UcjVfzqUTFYO8XZHKrPV6O71rE0piWHY6DD0Zkc6b3GndU=
