@@ -25,7 +25,7 @@
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
-    "version": "bump --yes package.json",
+    "version": "bump --yes package.json projects/ngx-sentry/package.json",
     "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
