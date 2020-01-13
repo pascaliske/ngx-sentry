@@ -25,6 +25,7 @@
     "lint": "ng lint",
     "check": "snyk test && snyk monitor",
     "format": "prettier --write \"{src,projects}/**/*.ts\"",
+    "version": "bump --yes package.json",
     "changelog": "standard-changelog",
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
@@ -53,6 +54,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@sentry/browser": "^5.11.0",
     "@types/node": "^13.1.6",
+    "bump-cli": "^1.1.3",
     "codelyzer": "^5.1.2",
     "husky": "^4.0.7",
     "lint-staged": "^9.5.0",
