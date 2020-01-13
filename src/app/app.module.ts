@@ -14,6 +14,7 @@ import { AppComponent } from './app.component'
             http: {
                 enabled: true,
             },
+            dialog: true,
         }),
     ],
     declarations: [AppComponent],

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { SentryService } from '@pascaliske/ngx-sentry'
 
 @Component({
     selector: 'app-root',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core'
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+    public constructor(private sentryService: SentryService) {}
+
     public trigger(): void {
-        throw new Error('DEMO!')
+        this.sentryService.captureException(new Error('DEMO!'))
     }
 }
