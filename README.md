@@ -51,6 +51,33 @@ export class AppModule {}
 > config.resolve.alias['@sentry/browser'] = '@sentry/browser/esm'
 > ```
 
+## `SentryService`
+
+You can use the `SentryService` injectable to manually capture errors or events as follows:
+
+```typescript
+@Component({
+    // [...]
+})
+export class AppComponent {
+    public constructor(private sentryService: SentryService) {}
+
+    public ngOnInit(): void {
+        // capture single error
+        this.sentryService.captureException(new Error(''))
+
+        // capture single error with additional context information
+        this.sentryService.withScope(scope => {
+            scope.setExtra('currentPage', window.location.href)
+            this.sentryService.captureException(new Error(''))
+        })
+    }
+}
+
+```
+
+> **Note:** The `SentryService` inherits all methods directly from the Sentry library. For more information about their APIs you can visit [their documentation](https://docs.sentry.io/enriching-error-data/context/?platform=browser).
+
 ## Options
 
 You can configure the library for yourself. The possible options for the `forRoot()` method are:
