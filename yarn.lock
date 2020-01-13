@@ -1160,6 +1160,11 @@
     "@nodelib/fs.scandir" "2.1.1"
     fastq "^1.6.0"
 
+"@pascaliske/prettier-config@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.0.2.tgz#48a5ab00cef5fb9a67a8e56e055f2bee322af4bd"
+  integrity sha512-tzC/OF5P+C6QREYIjvkB/CrEVG8cVC7MLAybH9bmGJjJfD9hz1UWfVw18OvDbU7wuGqKhQNMVIcJKQW4TiEE0w==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"

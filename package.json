@@ -30,6 +30,7 @@
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
   },
+  "prettier": "@pascaliske/prettier-config",
   "dependencies": {
     "@angular/animations": "~9.0.0-rc.8",
     "@angular/common": "~9.0.0-rc.8",
@@ -52,6 +53,7 @@
     "@angular/language-service": "~9.0.0-rc.8",
     "@commitlint/cli": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.4",
+    "@pascaliske/prettier-config": "^1.0.2",
     "@sentry/browser": "^5.11.0",
     "@types/node": "^13.1.6",
     "bump-cli": "^1.1.3",
