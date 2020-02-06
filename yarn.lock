@@ -6979,10 +6979,10 @@ netmask@^1.0.6:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
   integrity sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU=
 
-ng-packagr@^9.0.0-rc.9:
-  version "9.0.0-rc.9"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-9.0.0-rc.9.tgz#a12f8cfd01fb56513d7cb407300146782066fad1"
-  integrity sha512-JuGZLH1f8yT68XSICeGUkMZzh5pkalLNEuaL4b7Nv6oDnOIouYbQ+NKJXWI7Y3Thc+plasOQbkyFNGzRAmjSNQ==
+ng-packagr@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-9.0.0.tgz#a91d2092f95e51e6746f78a2c9b4fc9badb80d45"
+  integrity sha512-uK9sdOmjAQJgKh/3UN0/3XmV5IRTmdQt3vRElwbmd+rAl8Z/g/h2CMLIXqhLOfWcLnYzepkhoXlQPbiwpxAw0w==
   dependencies:
     "@rollup/plugin-commonjs" "^11.0.2"
     "@rollup/plugin-json" "^4.0.0"
