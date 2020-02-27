@@ -212,10 +212,10 @@
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.0.1.tgz#e95daa336ea93c6236fdc8863d01eaabc4070004"
   integrity sha512-yzzlCslWp7IiFSYjSGNqexPmnKn9xhpT8FKzxNT0qEpQ+SieQ7apsjvMfR3TCip0Nnfus2qTh3kz1ZCaawAcjQ==
 
-"@angular/language-service@~9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-9.0.2.tgz#5bc4b50e6cec95df660879f9f092774d5f2420c0"
-  integrity sha512-b+1g1FYG5MkSQtRqqUAN50N7fcEqA355dEHa2Vl03uBDZSYC/XSrR59IvgJfKLFuS4dopirvY9Eddbhk2FcAmg==
+"@angular/language-service@~9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-9.0.3.tgz#c936de116fefc03baca0c08334da9ea20e254777"
+  integrity sha512-uKJtVjejXd/wb1jf4lPrWWRwntZV/SmN1u2w6U0idVi1usR0mBx0V4YzlTW4irC/7dloBbh5QU8P2eGzN+OhVg==
 
 "@angular/platform-browser-dynamic@~9.0.1":
   version "9.0.1"
