@@ -1,3 +1,12 @@
+## [2.2.2](https://github.com/pascaliske/ngx-sentry/compare/v2.2.1...v2.2.2) (2020-02-28)
+
+
+### Bug Fixes
+
+* **interceptor:** always clone requests before handling ([52eb9d6](https://github.com/pascaliske/ngx-sentry/commit/52eb9d60b410ac54aa3b70b2a3d4ff76f6dbc139))
+
+
+
 ## [2.2.1](https://github.com/pascaliske/ngx-sentry/compare/v2.2.0...v2.2.1) (2020-02-14)
 
 

@@ -24,7 +24,7 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      * @returns - An observable with the request
      */
     public intercept(request: HttpRequest<any>, next: HttpHandler): Observable<any> {
-        return next.handle(request).pipe(
+        return next.handle(request.clone()).pipe(
             catchError(response => {
                 // log to Sentry
                 if (response instanceof HttpErrorResponse && this.filter(response)) {
