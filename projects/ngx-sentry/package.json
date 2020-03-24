@@ -1,7 +1,7 @@
 {
   "name": "@pascaliske/ngx-sentry",
   "description": "Angular ErrorHandler and HttpInterceptor for Sentry.",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
