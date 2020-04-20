@@ -54,7 +54,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@pascaliske/prettier-config": "^1.0.2",
     "@sentry/browser": "^5.15.4",
-    "@types/node": "^13.13.0",
+    "@types/node": "^13.13.1",
     "bump-cli": "^1.1.3",
     "codelyzer": "^5.2.2",
     "husky": "^4.2.5",
