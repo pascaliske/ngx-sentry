@@ -2,14 +2,6 @@
 # yarn lockfile v1
 
 
-"@angular-devkit/architect@0.901.4":
-  version "0.901.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.901.4.tgz#10bef514b1101900f1e404d9bd991a6c0b221afe"
-  integrity sha512-w4RMj7eLhUSh70HUy5tW4EXjLQFXk0Lfr9WiSy5gvPGp+zzYxknI+Wn4Xid1wU/WS+4tuMv5nJIaNaH2sABESQ==
-  dependencies:
-    "@angular-devkit/core" "9.1.4"
-    rxjs "6.5.4"
-
 "@angular-devkit/architect@0.901.5":
   version "0.901.5"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.901.5.tgz#148940d87bd6b4c09ca3aaba7f5cae4e11e44a94"
@@ -85,12 +77,12 @@
     webpack-subresource-integrity "1.4.0"
     worker-plugin "4.0.3"
 
-"@angular-devkit/build-ng-packagr@~0.901.4":
-  version "0.901.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.901.4.tgz#5c690b5214c03a7ac1ea1e0623f3614ef5bc8e55"
-  integrity sha512-79sC3c/hZfeGw37Yt4w1Q3rrrRTXwdj0H8okOB/XWaoVib0GjqapvwGX4LkaIddjXDYefzJ+CE1pDSvqVwEX3w==
+"@angular-devkit/build-ng-packagr@~0.901.5":
+  version "0.901.5"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-ng-packagr/-/build-ng-packagr-0.901.5.tgz#7bc461aef1697cab7a145f59b5c2a699990caadc"
+  integrity sha512-/2H8TIxzGOhtZIVSHT2FRTO/Gs17iVO8tNfKVgHLnkv58gsMdppPfIcZo2DY+DjnhXrVPcwwODCWFf2NG3ZU+w==
   dependencies:
-    "@angular-devkit/architect" "0.901.4"
+    "@angular-devkit/architect" "0.901.5"
     rxjs "6.5.4"
 
 "@angular-devkit/build-optimizer@0.901.5":
@@ -112,17 +104,6 @@
     "@angular-devkit/architect" "0.901.5"
     "@angular-devkit/core" "9.1.5"
     rxjs "6.5.4"
-
-"@angular-devkit/core@9.1.4":
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-9.1.4.tgz#97bb5681471ac40843167f2387b23e92a3e21ce4"
-  integrity sha512-OPFQDmT4XabLMSRDgmnzedlOrc83DzQIgLcfoh/UhZ7aJKf/2Vq4l09p/DkMNI36vN5BRL0zDZt7TjvKNgyYgA==
-  dependencies:
-    ajv "6.12.0"
-    fast-json-stable-stringify "2.1.0"
-    magic-string "0.25.7"
-    rxjs "6.5.4"
-    source-map "0.7.3"
 
 "@angular-devkit/core@9.1.5":
   version "9.1.5"
