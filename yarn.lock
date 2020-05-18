@@ -199,10 +199,10 @@
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-9.1.7.tgz#d8d62872b8a7df61e2d0e4f546680f0a5450f6c9"
   integrity sha512-p4WOZFCn6H5qgII9MbPjSu/AErt0rXpsXlMHC9KJl+JgfPI3YwQuX1dLdt3xTJlxuv8/fY9UbgmPJUqR/txRCg==
 
-"@angular/platform-browser-dynamic@~9.1.3":
-  version "9.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.1.3.tgz#72e3f6f101eb27acddc99bca6a70de3a01e6e190"
-  integrity sha512-9U8PkBflnQtKIZ4t0AqYUaKLg7Kx1BvJ1D/S8FZo/V5kBJK6NkGVu58XddWVc+dtO3V+vCC/VLG7fb2PMf/V5g==
+"@angular/platform-browser-dynamic@~9.1.7":
+  version "9.1.7"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-9.1.7.tgz#cf20e8f9ba3512ca906d7f21cf0926f0222a95ad"
+  integrity sha512-DyUDGxp4kF4majcm9COVzu/9wzmgnfj+d6GUEjYkbqSH9QP05LonJ6wHMNxNMN6qMfawdCxDe0TnNDRPmHUj9w==
 
 "@angular/platform-browser@~9.1.3":
   version "9.1.3"
