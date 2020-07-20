@@ -1264,10 +1264,10 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@pascaliske/prettier-config@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.0.2.tgz#48a5ab00cef5fb9a67a8e56e055f2bee322af4bd"
-  integrity sha512-tzC/OF5P+C6QREYIjvkB/CrEVG8cVC7MLAybH9bmGJjJfD9hz1UWfVw18OvDbU7wuGqKhQNMVIcJKQW4TiEE0w==
+"@pascaliske/prettier-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.1.0.tgz#54bc5a79623ebea0678b5d669689838034afa9d4"
+  integrity sha512-ByAfhYGf/XuZZHCTbfWqu52xUo23DPina/idLOw2G/rDS7xx0EHuQSqOxN3rDVqVUwoot1EBGGTDxu9/qdR7TQ==
 
 "@rollup/plugin-commonjs@^11.0.2":
   version "11.0.2"

@@ -52,7 +52,7 @@
     "@angular/language-service": "~9.1.11",
     "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
-    "@pascaliske/prettier-config": "^1.0.2",
+    "@pascaliske/prettier-config": "^1.1.0",
     "@sentry/browser": "^5.19.2",
     "@types/node": "^14.0.23",
     "bump-cli": "^1.1.3",
