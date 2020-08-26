@@ -58,7 +58,7 @@
     "bump-cli": "^1.1.3",
     "codelyzer": "^6.0.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
+    "lint-staged": "^10.2.13",
     "ng-packagr": "^10.0.4",
     "prettier": "^2.1.0",
     "standard-changelog": "^2.0.24",
