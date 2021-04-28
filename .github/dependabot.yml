@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    schedule:
+      interval: daily
+    directory: /
+    target-branch: develop
+    versioning-strategy: increase
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - dependencies
