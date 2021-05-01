@@ -3,4 +3,3 @@ daysUntilStale: 60
 daysUntilClose: 7
 exemptLabels:
   - dependencies
-  - greenkeeper

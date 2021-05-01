@@ -1,3 +1,7 @@
+# [3.0.0](https://github.com/pascaliske/ngx-sentry/compare/v2.3.1...v3.0.0) (2021-05-01)
+
+
+
 ## [2.3.1](https://github.com/pascaliske/ngx-sentry/compare/v2.3.0...v2.3.1) (2020-07-25)
 
 

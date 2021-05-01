@@ -1,0 +1,29 @@
+name: Publish package
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout
+      - uses: actions/checkout@v2
+
+      # prepare
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15'
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn install --frozen-lockfile
+
+      # build
+      - run: yarn run lint
+      - run: yarn run build
+
+      # publish
+      - run: yarn publish
+        working-directory: dist/ngx-sentry
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
