@@ -24,8 +24,5 @@ export class SentryErrorHandler implements ErrorHandler {
         if (this.options.enabled) {
             captureException(error.originalError || error)
         }
-
-        // re-throw error
-        throw error
     }
 }
