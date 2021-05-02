@@ -5,14 +5,16 @@ import { ModuleOptions, OPTIONS } from './tokens'
 /**
  * Injectable error handler for Sentry.
  */
-@Injectable()
+@Injectable({
+    providedIn: 'root',
+})
 export class SentryErrorHandler implements ErrorHandler {
     /**
      * Initializes the sentry connected error handler.
      *
      * @param - The module options.
      */
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {}
+    public constructor(@Inject(OPTIONS) private readonly options: ModuleOptions) {}
 
     /**
      * Handles any errors.
@@ -24,8 +26,5 @@ export class SentryErrorHandler implements ErrorHandler {
         if (this.options.enabled) {
             captureException(error.originalError || error)
         }
-
-        // re-throw error
-        throw error
     }
 }

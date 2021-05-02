@@ -1,3 +1,14 @@
+## [3.0.1](https://github.com/pascaliske/ngx-sentry/compare/v3.0.0...v3.0.1) (2021-05-02)
+
+
+### Bug Fixes
+
+* rename deprecated peer dependency setting ([bca8611](https://github.com/pascaliske/ngx-sentry/commit/bca8611ce70461ca07a571378a0b021784ab2f42))
+* **handler:** do not re-throw error after logging to sentry ([f0a2bb0](https://github.com/pascaliske/ngx-sentry/commit/f0a2bb0124f980989981e4b133955c61cef65f8b))
+* **handler:** provide handler service in root injector ([63d0c90](https://github.com/pascaliske/ngx-sentry/commit/63d0c9036b2d1007abea2587aded74342ed09828))
+
+
+
 # [3.0.0](https://github.com/pascaliske/ngx-sentry/compare/v2.3.1...v3.0.0) (2021-05-01)
 
 
