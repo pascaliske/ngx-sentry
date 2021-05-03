@@ -1688,10 +1688,10 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@pascaliske/prettier-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.1.0.tgz#54bc5a79623ebea0678b5d669689838034afa9d4"
-  integrity sha512-ByAfhYGf/XuZZHCTbfWqu52xUo23DPina/idLOw2G/rDS7xx0EHuQSqOxN3rDVqVUwoot1EBGGTDxu9/qdR7TQ==
+"@pascaliske/prettier-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@pascaliske/prettier-config/-/prettier-config-1.1.1.tgz#69297e36c7f735b446a0fbde4e0567254186d4c2"
+  integrity sha512-S8yr8oTBakOYu5aLRD9F/RtQq0i/8jVJ22iJKe5ow3cYs2su4maF16HlDaIxm01dTfnUB0/jaVcAXlOmwF004A==
 
 "@rollup/plugin-commonjs@^17.0.0":
   version "17.1.0"
