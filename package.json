@@ -52,7 +52,7 @@
     "@angular/compiler-cli": "~11.2.12",
     "@angular/language-service": "~11.2.13",
     "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.4",
     "@pascaliske/prettier-config": "^1.1.1",
     "@sentry/browser": "^6.3.6",
     "@types/node": "^15.0.2",
