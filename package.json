@@ -56,7 +56,7 @@
     "@pascaliske/prettier-config": "^1.1.2",
     "@rstacruz/bump-cli": "^2.0.0",
     "@sentry/browser": "^6.4.1",
-    "@types/node": "^15.6.1",
+    "@types/node": "^16.0.0",
     "codelyzer": "^6.0.2",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
