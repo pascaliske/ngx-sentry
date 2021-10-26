@@ -1,6 +1,5 @@
 {
   "{src,projects}/**/*.ts": [
-    "prettier --write",
-    "git add"
+    "prettier --write"
   ]
 }
