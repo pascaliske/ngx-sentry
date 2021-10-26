@@ -46,7 +46,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~12.0.2",
+    "@angular-devkit/build-angular": "~12.2.11",
     "@angular-devkit/build-ng-packagr": "~0.1002.0",
     "@angular/cli": "~12.0.2",
     "@angular/compiler-cli": "~12.0.2",
@@ -58,7 +58,7 @@
     "@sentry/browser": "^6.4.1",
     "@types/node": "^15.6.1",
     "codelyzer": "^6.0.2",
-    "husky": "^6.0.0",
+    "husky": "^7.0.4",
     "lint-staged": "^11.2.4",
     "ng-packagr": "^12.0.2",
     "prettier": "^2.4.1",
