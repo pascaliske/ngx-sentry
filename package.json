@@ -58,7 +58,7 @@
     "@sentry/browser": "^6.4.1",
     "@types/node": "^15.6.1",
     "codelyzer": "^6.0.2",
-    "husky": "^6.0.0",
+    "husky": "^7.0.4",
     "lint-staged": "^11.2.4",
     "ng-packagr": "^12.0.2",
     "prettier": "^2.4.1",
