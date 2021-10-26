@@ -4,7 +4,7 @@ updates:
     schedule:
       interval: daily
     directory: /
-    target-branch: develop
+    target-branch: master
     versioning-strategy: increase
     commit-message:
       prefix: chore
