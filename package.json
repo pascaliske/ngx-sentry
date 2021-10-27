@@ -59,7 +59,7 @@
     "@types/node": "^16.11.6",
     "codelyzer": "^6.0.2",
     "husky": "^7.0.4",
-    "lint-staged": "^11.2.5",
+    "lint-staged": "^11.2.6",
     "ng-packagr": "^12.2.5",
     "prettier": "^2.4.1",
     "standard-changelog": "^2.0.27",
