@@ -60,7 +60,7 @@
     "codelyzer": "^6.0.2",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
-    "ng-packagr": "^12.2.5",
+    "ng-packagr": "^12.2.6",
     "prettier": "^2.5.1",
     "standard-changelog": "^2.0.27",
     "ts-node": "~10.4.0",
