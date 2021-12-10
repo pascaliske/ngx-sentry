@@ -1,5 +1,17 @@
 version: 2
 updates:
+  - package-ecosystem: github-actions
+    schedule:
+      interval: daily
+    directory: /
+    target-branch: master
+    commit-message:
+      prefix: chore
+      include: scope
+    assignees:
+      - pascaliske
+    labels:
+      - dependencies
   - package-ecosystem: npm
     schedule:
       interval: daily
@@ -9,5 +21,7 @@ updates:
     commit-message:
       prefix: chore
       include: scope
+    assignees:
+      - pascaliske
     labels:
       - dependencies
