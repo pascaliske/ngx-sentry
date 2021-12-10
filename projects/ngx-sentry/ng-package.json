@@ -4,9 +4,6 @@
   "deleteDestPath": false,
   "allowedNonPeerDependencies": [],
   "lib": {
-    "entryFile": "src/exports.ts",
-    "umdModuleIds": {
-      "@sentry/browser": "Sentry"
-    }
+    "entryFile": "src/exports.ts"
   }
 }
