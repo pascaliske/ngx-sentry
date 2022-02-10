@@ -27,3 +27,22 @@ jobs:
         working-directory: dist/ngx-sentry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # generate release notes
+      - name: Generate release notes
+        if: startsWith(github.ref, 'refs/tags/v')
+        id: changelog
+        run: |
+          npx standard-changelog -i /dev/null -o CHANGES.md
+
+      # create github release
+      - uses: ncipollo/release-action@v1
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          tag: v${{ steps.metadata.outputs.version }}
+          name: Release v${{ steps.metadata.outputs.version }}
+          bodyFile: CHANGES.md
+          prerelease: ${{ steps.changelog.outputs.status == 'prereleased' }}
+          draft: ${{ steps.changelog.outputs.status == 'unreleased' }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: README.md,LICENSE.md
