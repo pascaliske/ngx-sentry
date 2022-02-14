@@ -1,3 +1,18 @@
+# [4.0.0](https://github.com/pascaliske/ngx-sentry/compare/v3.0.1...v4.0.0) (2022-02-14)
+
+
+### Features
+
+* enable partial compilation mode using ivy ([14c3b9b](https://github.com/pascaliske/ngx-sentry/commit/14c3b9bd6425b5d9b0a65f3af4492686d441f2f9))
+
+
+### BREAKING CHANGES
+
+* This library is now distributed using partial compilation mode for Angular Ivy.
+See here for more information: https://github.com/angular/angular/issues/38366
+
+
+
 ## [3.0.1](https://github.com/pascaliske/ngx-sentry/compare/v3.0.0...v3.0.1) (2021-05-02)
 
 
