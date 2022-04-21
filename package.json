@@ -50,7 +50,7 @@
     "@angular-devkit/build-ng-packagr": "~0.1002.0",
     "@angular/cli": "~13.3.1",
     "@angular/compiler-cli": "~13.2.2",
-    "@angular/language-service": "~13.3.3",
+    "@angular/language-service": "~13.3.4",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@pascaliske/prettier-config": "^1.1.5",
