@@ -51,7 +51,7 @@
     "@angular/cli": "~13.3.1",
     "@angular/compiler-cli": "~13.2.2",
     "@angular/language-service": "~13.3.11",
-    "@commitlint/cli": "^17.0.2",
+    "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@pascaliske/prettier-config": "^1.1.5",
     "@rstacruz/bump-cli": "^2.0.1",
