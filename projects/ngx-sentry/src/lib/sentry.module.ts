@@ -18,10 +18,16 @@ export function initializer(options: ModuleOptions): void {
         if (options.dialog) {
             options.sentry.beforeSend = event => {
                 if (event.exception) {
-                    showReportDialog(
-                        typeof options.dialog === 'object' ? options.dialog : undefined,
-                    )
+                    // show dialog with options
+                    if (typeof options.dialog === 'object') {
+                        showReportDialog(options.dialog)
+                        return event
+                    }
+
+                    // show dialog without options
+                    showReportDialog()
                 }
+
                 return event
             }
         }

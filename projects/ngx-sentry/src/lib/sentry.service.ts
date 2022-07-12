@@ -45,7 +45,7 @@ export class SentryService {
      * @param - The exception to report
      * @returns - Returns the generated event id
      */
-    public captureException(exception: any): string {
+    public captureException<T = unknown>(exception: T): string {
         return captureException(exception)
     }
 

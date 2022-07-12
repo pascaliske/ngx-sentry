@@ -2,12 +2,6 @@ import { InjectionToken } from '@angular/core'
 import { BrowserOptions, ReportDialogOptions } from '@sentry/browser'
 
 /**
- * Injection tokens.
- */
-export const INITIALIZER = new InjectionToken<void>('initializer')
-export const OPTIONS = new InjectionToken<ModuleOptions>('options')
-
-/**
  * Module options.
  */
 export interface ModuleOptions {
@@ -21,3 +15,9 @@ export interface ModuleOptions {
         blacklist?: number[]
     }
 }
+
+/**
+ * Injection tokens.
+ */
+export const INITIALIZER = new InjectionToken<void>('initializer')
+export const OPTIONS = new InjectionToken<ModuleOptions>('options')

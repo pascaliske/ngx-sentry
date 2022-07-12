@@ -16,7 +16,7 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "tslint.autoFixOnSave": true,
-        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.tsdk": "ngx-sentry/node_modules/typescript/lib",
         "[yaml]": {
             "editor.formatOnSave": false,
             "editor.formatOnType": false

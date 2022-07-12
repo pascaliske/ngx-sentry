@@ -77,6 +77,12 @@
               "browserTarget": "ngx-sentry-demo:build:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts"]
+          }
         }
       }
     },
@@ -97,6 +103,12 @@
               "project": "projects/ngx-sentry/ng-package.prod.json",
               "tsConfig": "projects/ngx-sentry/tsconfig.lib.prod.json"
             }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ngx-sentry/src/**/*.ts"]
           }
         }
       }

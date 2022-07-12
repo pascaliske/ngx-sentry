@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": "@pascaliske/eslint-config/angular",
+  "parserOptions": {
+    "project": ["./tsconfig.json"],
+    "createDefaultProgram": true
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "APP_ID": "readonly",
+    "APP_VERSION": "readonly"
+  }
+}

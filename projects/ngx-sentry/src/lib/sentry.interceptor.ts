@@ -1,5 +1,11 @@
 import { Injectable, Inject } from '@angular/core'
-import { HttpInterceptor, HttpRequest, HttpHandler, HttpErrorResponse } from '@angular/common/http'
+import {
+    HttpInterceptor,
+    HttpRequest,
+    HttpHandler,
+    HttpEvent,
+    HttpErrorResponse,
+} from '@angular/common/http'
 import { captureMessage } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
@@ -15,7 +21,7 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      *
      * @param - The module options.
      */
-    public constructor(@Inject(OPTIONS) private options: ModuleOptions) {}
+    public constructor(@Inject(OPTIONS) private readonly options: ModuleOptions) {}
 
     /**
      * Intercepts HTTP requests and handles any HTTP errors.
@@ -23,16 +29,18 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      * @param - The intercepted request.
      * @returns - An observable with the request
      */
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public intercept(request: HttpRequest<any>, next: HttpHandler): Observable<any> {
         return next.handle(request.clone()).pipe(
-            catchError(response => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            catchError<HttpEvent<any>, any>(response => {
                 // log to Sentry
                 if (response instanceof HttpErrorResponse && this.filter(response)) {
                     captureMessage(this.getMessage(request, response))
                 }
 
                 // re-throw error
-                return throwError(response)
+                return throwError(() => response)
             }),
         )
     }
@@ -72,9 +80,9 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      * @param - The HTTP response object
      * @returns - The built message to capture
      */
-    private getMessage(request: HttpRequest<any>, response: HttpErrorResponse): string {
+    private getMessage<T = unknown>(request: HttpRequest<T>, response: HttpErrorResponse): string {
         const defaultMessage = 'Http request failed. ({method}, {status}, {url})'
-        const replace = (msg: string) => {
+        const replace = (msg: string): string => {
             const map = {
                 method: request.method,
                 url: request.url,
@@ -84,14 +92,14 @@ export class SentryErrorInterceptor implements HttpInterceptor {
 
             // replace all keys with their values
             Object.keys(map).forEach(key => {
-                msg = msg.replace(new RegExp(`{${key}}`, 'g'), map[key])
+                msg = msg.replace(new RegExp(`{${key}}`, 'g'), map[key] as string)
             })
 
             return msg
         }
 
         // use custom message
-        if (this.options.http && this.options.http.message) {
+        if (this.options?.http?.message) {
             return replace(this.options.http.message)
         }
 

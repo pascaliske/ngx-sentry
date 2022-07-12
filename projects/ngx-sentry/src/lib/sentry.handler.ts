@@ -21,6 +21,7 @@ export class SentryErrorHandler implements ErrorHandler {
      *
      * @param - The error to handle.
      */
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public handleError(error: any): void {
         // log to Sentry
         if (this.options.enabled) {
