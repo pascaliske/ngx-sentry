@@ -1,3 +1,12 @@
+# [4.1.0](https://github.com/pascaliske/ngx-sentry/compare/v4.0.2...v4.1.0) (2022-07-12)
+
+
+### Features
+
+* implement angular 14 compatibility ([66ca897](https://github.com/pascaliske/ngx-sentry/commit/66ca897a2dbdcd99e260d985d9dc07edab170efa))
+
+
+
 ## [4.0.2](https://github.com/pascaliske/ngx-sentry/compare/v4.0.1...v4.0.2) (2022-03-03)
 
 
