@@ -64,7 +64,7 @@
     "@sentry/browser": "^7.10.0",
     "@types/node": "^18.7.5",
     "@typescript-eslint/eslint-plugin": "5.33.1",
-    "@typescript-eslint/parser": "5.33.0",
+    "@typescript-eslint/parser": "5.33.1",
     "codelyzer": "^6.0.2",
     "eslint": "^8.22.0",
     "husky": "^8.0.1",
