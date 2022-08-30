@@ -63,7 +63,7 @@
     "@rstacruz/bump-cli": "^2.0.1",
     "@sentry/browser": "^7.11.1",
     "@types/node": "^18.7.13",
-    "@typescript-eslint/eslint-plugin": "5.35.1",
+    "@typescript-eslint/eslint-plugin": "5.36.0",
     "@typescript-eslint/parser": "5.35.1",
     "codelyzer": "^6.0.2",
     "eslint": "^8.23.0",
