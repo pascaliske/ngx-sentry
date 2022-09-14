@@ -62,7 +62,7 @@
     "@pascaliske/prettier-config": "^1.2.0",
     "@rstacruz/bump-cli": "^2.0.1",
     "@sentry/browser": "^7.12.0",
-    "@types/node": "^18.7.17",
+    "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "5.37.0",
     "@typescript-eslint/parser": "5.37.0",
     "codelyzer": "^6.0.2",
