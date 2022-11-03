@@ -150,4 +150,4 @@ Use a blacklist of HTTP status codes to filter the intercepted HTTP requests. Al
 
 ## License
 
-MIT © [Pascal Iske](https://pascal-iske.de)
+MIT © [Pascal Iske](https://pascaliske.dev)
