@@ -1,3 +1,20 @@
+# [4.2.0](https://github.com/pascaliske/ngx-sentry/compare/v4.1.0...v4.2.0) (2023-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rxjs to ~7.6.0 ([26c2357](https://github.com/pascaliske/ngx-sentry/commit/26c23570d9da6fd11674e9688c557d9d0babb1c7))
+* **deps:** update dependency rxjs to ~7.8.0 ([ad871f0](https://github.com/pascaliske/ngx-sentry/commit/ad871f0527d4465105ce1d225a2b2bb0f2eb9d81))
+* **deps:** update dependency zone.js to ~0.12.0 ([8264bbb](https://github.com/pascaliske/ngx-sentry/commit/8264bbb02aca4ffb421ce5e118acdf0d4d60b161))
+* **deps:** update dependency zone.js to ~0.13.0 ([e883112](https://github.com/pascaliske/ngx-sentry/commit/e883112a5f8129ba39cd3b2fec148cb5a7b9bfac))
+
+
+### Features
+
+* upgrade angular to v16 ([dc9b5d2](https://github.com/pascaliske/ngx-sentry/commit/dc9b5d29d1c1c9de7945bb83e9ff476eeccc7200))
+
+
+
 # [4.1.0](https://github.com/pascaliske/ngx-sentry/compare/v4.0.2...v4.1.0) (2022-07-12)
 
 
