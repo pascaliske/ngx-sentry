@@ -9,8 +9,9 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2022",
     "typeRoots": [
       "node_modules/@types"
     ],
