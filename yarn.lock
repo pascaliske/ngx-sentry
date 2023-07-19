@@ -1900,12 +1900,12 @@
     node-addon-api "^3.2.1"
     node-gyp-build "^4.3.0"
 
-"@pascaliske/eslint-config@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@pascaliske/eslint-config/-/eslint-config-2.0.6.tgz#ea73e2caf14a9489acb422fd7ac7cf588ef032ed"
-  integrity sha512-JWRURL3kOJRiRucERYfskOmmJs2Q52sPRZoSPG7XVF7/4BvfXdXx7cQ8k+4slDTsbIPEjoldPUxQyi9d9TDkiw==
+"@pascaliske/eslint-config@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@pascaliske/eslint-config/-/eslint-config-3.0.0.tgz#ecddb57bc2200485609bc63ea9d6eb015506423f"
+  integrity sha512-dzplhZuuOU+ANgD8V4EKi+30LdQm1UKxj6PxGTUVMN4hBq3Rql8xZUfNZ7TsNgFT5jiSiYysLbTnlEqlrsJu1Q==
   dependencies:
-    eslint-config-prettier "^8.3.0"
+    eslint-config-prettier "^8.5.0"
 
 "@pascaliske/prettier-config@^1.2.0":
   version "1.2.0"
@@ -3944,7 +3944,7 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-prettier@^8.3.0:
+eslint-config-prettier@^8.5.0:
   version "8.8.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.8.0.tgz#bfda738d412adc917fd7b038857110efe98c9348"
   integrity sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==
