@@ -70,7 +70,7 @@
     "lint-staged": "^14.0.0",
     "ng-packagr": "^16.1.0",
     "prettier": "^3.0.0",
-    "standard-changelog": "^4.0.0",
+    "standard-changelog": "^5.0.0",
     "ts-node": "~10.9.1",
     "typescript": "~5.1.3"
   }
