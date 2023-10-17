@@ -67,7 +67,7 @@
     "codelyzer": "^6.0.2",
     "eslint": "^8.43.0",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.0",
+    "lint-staged": "^15.0.0",
     "ng-packagr": "^16.1.0",
     "prettier": "^3.0.0",
     "standard-changelog": "^5.0.0",
