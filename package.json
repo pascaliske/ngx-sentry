@@ -65,7 +65,7 @@
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
     "codelyzer": "^6.0.2",
-    "eslint": "^8.43.0",
+    "eslint": "^9.0.0",
     "husky": "^9.0.10",
     "lint-staged": "^15.0.0",
     "ng-packagr": "^16.1.0",
