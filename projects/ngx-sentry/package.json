@@ -21,7 +21,7 @@
   "peerDependencies": {
     "@angular/common": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "@angular/core": "^14.0.0 || ^15.0.0 || ^16.0.0",
-    "@sentry/browser": "^7.0.0"
+    "@sentry/browser": "^8.0.0"
   },
   "dependencies": {
     "tslib": "^2.2.0"
