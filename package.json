@@ -29,6 +29,7 @@
     "link": "yarn run build && cd dist/ngx-sentry && yarn link",
     "unlink": "cd dist/ngx-sentry && yarn unlink"
   },
+  "packageManager": "yarn@1.22.22",
   "prettier": "@pascaliske/prettier-config",
   "dependencies": {
     "@angular/animations": "^16.1.1",
