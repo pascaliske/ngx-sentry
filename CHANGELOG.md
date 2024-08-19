@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/pascaliske/ngx-sentry/compare/v4.2.0...v5.0.0) (2024-08-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zone.js to ~0.14.0 ([cd3ce42](https://github.com/pascaliske/ngx-sentry/commit/cd3ce42116acb5cd36169fd0bc4f88f28f9faf41))
+
+
+### Features
+
+* update angular to v18 ([4626928](https://github.com/pascaliske/ngx-sentry/commit/4626928acc6358f6c9fb91c838cc06e9799adca4))
+* update angular-eslint stack to latest versions ([7441a77](https://github.com/pascaliske/ngx-sentry/commit/7441a77ef018ac3185382dcbab2c75c4a9db3e19))
+
+
+
 # [4.2.0](https://github.com/pascaliske/ngx-sentry/compare/v4.1.0...v4.2.0) (2023-06-19)
 
 
