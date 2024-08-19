@@ -4,10 +4,10 @@ import {
     captureMessage,
     captureException,
     captureEvent,
-    configureScope,
+    getCurrentScope,
     withScope,
     Breadcrumb,
-    Severity,
+    SeverityLevel,
     Event,
     Scope,
 } from '@sentry/browser'
@@ -35,7 +35,7 @@ export class SentryService {
      * @param - The severity level of the message
      * @returns - Returns the generated event id
      */
-    public captureMessage(message: string, level: Severity): string {
+    public captureMessage(message: string, level: SeverityLevel): string {
         return captureMessage(message, level)
     }
 
@@ -60,12 +60,12 @@ export class SentryService {
     }
 
     /**
-     * Configure a {@link Scope}.
+     * Get the current {@link Scope}.
      *
-     * @param - A callback for configuring the scope
+     * @returns - Returns the current scope
      */
-    public configureScope(callback: (scope: Scope) => void): void {
-        configureScope(callback)
+    public getCurrentScope(): Scope {
+        return getCurrentScope()
     }
 
     /**
