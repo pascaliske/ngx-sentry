@@ -1,3 +1,17 @@
+## [5.0.1](https://github.com/pascaliske/ngx-sentry/compare/v5.0.0...v5.0.1) (2024-08-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency zone.js to ~0.15.0 ([8da4b18](https://github.com/pascaliske/ngx-sentry/commit/8da4b184f2f63956d7a11c5ed7cdbd57769b2209))
+
+
+### Features
+
+* update angular to v18.2.1 ([20a811c](https://github.com/pascaliske/ngx-sentry/commit/20a811c5e4f5308758e6b2cc4097616f0a4fff85))
+
+
+
 # [5.0.0](https://github.com/pascaliske/ngx-sentry/compare/v4.2.0...v5.0.0) (2024-08-19)
 
 
