@@ -5,6 +5,7 @@ import { SentryService } from '@pascaliske/ngx-sentry'
     selector: 'cmp-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    standalone: false,
 })
 export class AppComponent {
     public constructor(private readonly sentryService: SentryService) {}

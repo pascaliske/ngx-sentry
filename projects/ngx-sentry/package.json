@@ -5,8 +5,8 @@
   "license": "MIT",
   "author": {
     "name": "Pascal Iske",
-    "email": "info@pascal-iske.de",
-    "url": "https://pascal-iske.de"
+    "email": "info@pascaliske.dev",
+    "url": "https://pascaliske.dev"
   },
   "repository": {
     "url": "https://github.com/pascaliske/ngx-sentry.git",
@@ -19,8 +19,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "@angular/common": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "@angular/core": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "@angular/common": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "@angular/core": "^17.0.0 || ^18.0.0 || ^19.0.0",
     "@sentry/browser": "^8.0.0"
   },
   "dependencies": {
