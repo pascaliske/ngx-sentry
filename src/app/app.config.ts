@@ -1,9 +1,10 @@
 import type { ApplicationConfig } from '@angular/core'
-import { importProvidersFrom } from '@angular/core'
+import { provideExperimentalZonelessChangeDetection, importProvidersFrom } from '@angular/core'
 import { SentryModule } from '@pascaliske/ngx-sentry'
 
 export const appConfig: ApplicationConfig = {
     providers: [
+        provideExperimentalZonelessChangeDetection(),
         importProvidersFrom(
             SentryModule.forRoot({
                 enabled: true,
