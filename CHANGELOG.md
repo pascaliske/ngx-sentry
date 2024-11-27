@@ -1,3 +1,24 @@
+# [6.0.0](https://github.com/pascaliske/ngx-sentry/compare/v5.0.1...v6.0.0) (2024-11-27)
+
+
+### Features
+
+* migrate to a provider function based library ([e5319dc](https://github.com/pascaliske/ngx-sentry/commit/e5319dcb58f7cb32c73ce06f23f48d1b2c1b275a))
+* rename options token in preparation for provider based library ([d560da8](https://github.com/pascaliske/ngx-sentry/commit/d560da8f960246fbebd10e3fe9c589a497705468))
+* upgrade angular to v19 ([d09fd93](https://github.com/pascaliske/ngx-sentry/commit/d09fd93f847a936a5ee81bf86b892cf47a56fe72))
+
+
+### BREAKING CHANGES
+
+* The bootstrap process of this library changed from a
+module based one to a provider function based one. Replace calls to
+`SentryModule.forRoot()` with `provideSentry()`.
+* In preparation for a standalone compatible library the
+options token interface was renamed from `ModuleOptions` to
+`SentryOptions`.
+
+
+
 ## [5.0.1](https://github.com/pascaliske/ngx-sentry/compare/v5.0.0...v5.0.1) (2024-08-24)
 
 
