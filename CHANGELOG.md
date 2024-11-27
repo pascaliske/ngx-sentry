@@ -1,3 +1,7 @@
+## [6.0.1](https://github.com/pascaliske/ngx-sentry/compare/v6.0.0...v6.0.1) (2024-11-27)
+
+
+
 # [6.0.0](https://github.com/pascaliske/ngx-sentry/compare/v5.0.1...v6.0.0) (2024-11-27)
 
 
