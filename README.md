@@ -22,7 +22,7 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
-[`SentryOptions` object](#sentryoptions)
+Import the `provideSentry()` function in your application configuration file. The function expects an object with at least the following two keys: `enabled`, `sentry`. More options can be found in the [`SentryOptions` section](#sentryoptions) below.
 
 ```typescript
 import type { ApplicationConfig } from '@angular/core'
