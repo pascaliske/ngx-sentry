@@ -1,6 +1,6 @@
 import { Injectable, Inject, ErrorHandler } from '@angular/core'
 import { captureException } from '@sentry/browser'
-import { ModuleOptions, OPTIONS } from './tokens'
+import { SentryOptions, OPTIONS } from './tokens'
 
 /**
  * Injectable error handler for Sentry.
@@ -14,7 +14,7 @@ export class SentryErrorHandler implements ErrorHandler {
      *
      * @param - The module options.
      */
-    public constructor(@Inject(OPTIONS) private readonly options: ModuleOptions) {}
+    public constructor(@Inject(OPTIONS) private readonly options: SentryOptions) {}
 
     /**
      * Handles any errors.

@@ -9,7 +9,7 @@ import {
 import { captureMessage } from '@sentry/browser'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
-import { ModuleOptions, OPTIONS } from './tokens'
+import { SentryOptions, OPTIONS } from './tokens'
 
 /**
  * Injectable HTTP interceptor for Sentry.
@@ -21,7 +21,7 @@ export class SentryErrorInterceptor implements HttpInterceptor {
      *
      * @param - The module options.
      */
-    public constructor(@Inject(OPTIONS) private readonly options: ModuleOptions) {}
+    public constructor(@Inject(OPTIONS) private readonly options: SentryOptions) {}
 
     /**
      * Intercepts HTTP requests and handles any HTTP errors.

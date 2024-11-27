@@ -4,7 +4,7 @@ import { BrowserOptions, ReportDialogOptions } from '@sentry/browser'
 /**
  * Module options.
  */
-export interface ModuleOptions {
+export interface SentryOptions {
     enabled: boolean
     sentry: BrowserOptions
     dialog?: true | ReportDialogOptions
@@ -20,4 +20,4 @@ export interface ModuleOptions {
  * Injection tokens.
  */
 export const INITIALIZER = new InjectionToken<void>('initializer')
-export const OPTIONS = new InjectionToken<ModuleOptions>('options')
+export const OPTIONS = new InjectionToken<SentryOptions>('options')

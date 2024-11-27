@@ -3,7 +3,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http'
 import { init, showReportDialog } from '@sentry/browser'
 import { SentryErrorHandler } from './sentry.handler'
 import { SentryErrorInterceptor } from './sentry.interceptor'
-import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
+import { SentryOptions, OPTIONS, INITIALIZER } from './tokens'
 
 /**
  * Initializer function to setup sentry logging.
@@ -11,7 +11,7 @@ import { ModuleOptions, OPTIONS, INITIALIZER } from './tokens'
  * @param - The module options
  * @returns - A promise for waiting to be resolved
  */
-export function initializer(options: ModuleOptions): void {
+export function initializer(options: SentryOptions): void {
     // configure sentry's browser library
     if (options.enabled) {
         // show report dialog
@@ -51,7 +51,7 @@ export class SentryModule {
      * @param - The module options
      * @returns - The module with all providers
      */
-    public static forRoot(options: ModuleOptions): ModuleWithProviders<SentryModule> {
+    public static forRoot(options: SentryOptions): ModuleWithProviders<SentryModule> {
         return {
             ngModule: SentryModule,
             providers: [
