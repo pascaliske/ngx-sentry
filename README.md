@@ -22,34 +22,24 @@ $ yarn add @pascaliske/ngx-sentry
 
 ## Usage
 
-Import the `SentryModule` with the `forRoot()` method in your applications main module. The `forRoot()` method expects an [options object](#options) with at least the following two keys: `enabled`, `sentry`. More options can be found in the [options section](#options).
+[`SentryOptions` object](#sentryoptions)
 
 ```typescript
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { SentryModule } from '@pascaliske/ngx-sentry'
-import { AppComponent } from './app.component'
+import type { ApplicationConfig } from '@angular/core'
+import { provideSentry } from '@pascaliske/ngx-sentry'
 
-@NgModule({
-    imports: [
-        BrowserModule,
-        SentryModule.forRoot({
+export const appConfig: ApplicationConfig = {
+    providers: [
+        provideExperimentalZonelessChangeDetection(),
+        provideSentry({
             enabled: true,
             sentry: {
                 dsn: 'https://your-sentry-dsn@sentry.io',
             },
         }),
     ],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent],
-})
-export class AppModule {}
+}
 ```
-
-> **Pro tip:** You can reduce your bundle size by using [Sentry's ESM build](https://github.com/getsentry/sentry-javascript). It can be enabled by aliasing it with webpack:
-> ```typescript
-> config.resolve.alias['@sentry/browser'] = '@sentry/browser/esm'
-> ```
 
 ## `SentryService`
 
@@ -78,9 +68,9 @@ export class AppComponent {
 
 > **Note:** The `SentryService` inherits all methods directly from the Sentry library. For more information about their APIs you can visit [their documentation](https://docs.sentry.io/enriching-error-data/context/?platform=browser).
 
-## Options
+## `SentryOptions`
 
-You can configure the library for yourself. The possible options for the `forRoot()` method are:
+You can configure the library for yourself. The possible options for the `provideSentry()` function are:
 
 ### enabled
 
