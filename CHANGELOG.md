@@ -1,3 +1,12 @@
+## [6.0.3](https://github.com/pascaliske/ngx-sentry/compare/v6.0.2...v6.0.3) (2024-12-11)
+
+
+### Features
+
+* upgrade angular to v19.0.4 ([e992f10](https://github.com/pascaliske/ngx-sentry/commit/e992f10b175fba65fccd12b8adc65498215a1856))
+
+
+
 ## [6.0.2](https://github.com/pascaliske/ngx-sentry/compare/v6.0.1...v6.0.2) (2024-12-05)
 
 
