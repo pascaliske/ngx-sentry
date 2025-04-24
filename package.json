@@ -60,7 +60,7 @@
     "@pascaliske/eslint-config": "^3.0.1",
     "@pascaliske/prettier-config": "^1.3.0",
     "@rstacruz/bump-cli": "^2.0.1",
-    "@sentry/browser": "^8.47.0",
+    "@sentry/browser": "^9.0.0",
     "@types/node": "^22.13.8",
     "@typescript-eslint/eslint-plugin": "8.31.0",
     "@typescript-eslint/parser": "8.31.0",
