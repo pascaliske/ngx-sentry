@@ -1,3 +1,15 @@
+## [6.0.4](https://github.com/pascaliske/ngx-sentry/compare/v6.0.3...v6.0.4) (2025-07-20)
+
+
+### Features
+
+* upgrade angular to v19.0.5 ([74e9ab9](https://github.com/pascaliske/ngx-sentry/commit/74e9ab9))
+* upgrade angular to v19.2.0 ([ed9e4b2](https://github.com/pascaliske/ngx-sentry/commit/ed9e4b2))
+* upgrade angular to v20 ([d1fea16](https://github.com/pascaliske/ngx-sentry/commit/d1fea16))
+* upgrade eslint stack ([92f2d43](https://github.com/pascaliske/ngx-sentry/commit/92f2d43))
+
+
+
 ## [6.0.3](https://github.com/pascaliske/ngx-sentry/compare/v6.0.2...v6.0.3) (2024-12-11)
 
 
