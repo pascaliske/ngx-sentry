@@ -1,10 +1,10 @@
 import type { ApplicationConfig } from '@angular/core'
-import { provideExperimentalZonelessChangeDetection } from '@angular/core'
+import { provideZonelessChangeDetection } from '@angular/core'
 import { provideSentry } from '@pascaliske/ngx-sentry'
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        provideExperimentalZonelessChangeDetection(),
+        provideZonelessChangeDetection(),
         provideSentry({
             enabled: true,
             sentry: {
