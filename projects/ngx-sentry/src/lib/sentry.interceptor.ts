@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@angular/core'
+import { Injectable, inject } from '@angular/core'
 import {
     HttpInterceptor,
     HttpRequest,
@@ -16,12 +16,7 @@ import { SentryOptions, OPTIONS } from './tokens'
  */
 @Injectable()
 export class SentryErrorInterceptor implements HttpInterceptor {
-    /**
-     * Initializes the sentry connected HTTP interceptor.
-     *
-     * @param - The module options.
-     */
-    public constructor(@Inject(OPTIONS) private readonly options: SentryOptions) {}
+    private readonly options: SentryOptions = inject<SentryOptions>(OPTIONS)
 
     /**
      * Intercepts HTTP requests and handles any HTTP errors.

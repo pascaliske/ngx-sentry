@@ -1,4 +1,4 @@
-import { Injectable, Inject, ErrorHandler } from '@angular/core'
+import { Injectable, ErrorHandler, inject } from '@angular/core'
 import { captureException } from '@sentry/browser'
 import { SentryOptions, OPTIONS } from './tokens'
 
@@ -9,12 +9,7 @@ import { SentryOptions, OPTIONS } from './tokens'
     providedIn: 'root',
 })
 export class SentryErrorHandler implements ErrorHandler {
-    /**
-     * Initializes the sentry connected error handler.
-     *
-     * @param - The module options.
-     */
-    public constructor(@Inject(OPTIONS) private readonly options: SentryOptions) {}
+    private readonly options: SentryOptions = inject<SentryOptions>(OPTIONS)
 
     /**
      * Handles any errors.

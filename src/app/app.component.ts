@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
 import { SentryService } from '@pascaliske/ngx-sentry'
 
 @Component({
@@ -6,7 +6,7 @@ import { SentryService } from '@pascaliske/ngx-sentry'
     templateUrl: './app.component.html',
 })
 export class AppComponent {
-    public constructor(private readonly sentryService: SentryService) {}
+    private readonly sentryService: SentryService = inject(SentryService)
 
     public trigger(): void {
         this.sentryService.captureException(new Error('DEMO!'))
