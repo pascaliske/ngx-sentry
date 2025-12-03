@@ -68,7 +68,7 @@
     "eslint": "^9.28.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
-    "ng-packagr": "^20.1.0",
+    "ng-packagr": "^21.0.0",
     "prettier": "^3.6.2",
     "standard-changelog": "^7.0.0",
     "ts-node": "~10.9.2",
