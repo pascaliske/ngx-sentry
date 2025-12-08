@@ -1,3 +1,18 @@
+## [6.0.5](https://github.com/pascaliske/ngx-sentry/compare/v6.0.4...v6.0.5) (2025-12-08)
+
+
+### Bug Fixes
+
+* switch to non experimental zoneless change detection ([73788c6](https://github.com/pascaliske/ngx-sentry/commit/73788c6))
+
+
+### Features
+
+* upgrade angular to v21 ([fd8efd2](https://github.com/pascaliske/ngx-sentry/commit/fd8efd2))
+* upgrade eslint stack ([cb359d7](https://github.com/pascaliske/ngx-sentry/commit/cb359d7))
+
+
+
 ## [6.0.4](https://github.com/pascaliske/ngx-sentry/compare/v6.0.3...v6.0.4) (2025-07-20)
 
 
