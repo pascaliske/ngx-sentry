@@ -20,7 +20,7 @@ export class SentryErrorHandler implements ErrorHandler {
     public handleError(error: any): void {
         // log to Sentry
         if (this.options.enabled) {
-            captureException(error.originalError || error)
+            captureException(error?.originalError ?? error)
         }
     }
 }
